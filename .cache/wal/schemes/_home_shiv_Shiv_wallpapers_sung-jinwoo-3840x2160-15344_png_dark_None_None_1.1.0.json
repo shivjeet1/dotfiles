@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/shiv/Shiv/wallpapers/sung-jinwoo-3840x2160-15344.png",
+    "alpha": "100",
+    "special": {
+        "background": "#10101e",
+        "foreground": "#f6e7d8",
+        "cursor": "#f6e7d8"
+    },
+    "colors": {
+        "color0": "#10101e",
+        "color1": "#D09978",
+        "color2": "#72768B",
+        "color3": "#AAAAAD",
+        "color4": "#D6AA8F",
+        "color5": "#EFD0B5",
+        "color6": "#DDE0DF",
+        "color7": "#f6e7d8",
+        "color8": "#aca197",
+        "color9": "#D09978",
+        "color10": "#72768B",
+        "color11": "#AAAAAD",
+        "color12": "#D6AA8F",
+        "color13": "#EFD0B5",
+        "color14": "#DDE0DF",
+        "color15": "#f6e7d8"
+    }
+}

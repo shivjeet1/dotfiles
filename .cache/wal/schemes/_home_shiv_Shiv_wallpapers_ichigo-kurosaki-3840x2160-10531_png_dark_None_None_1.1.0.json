@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/shiv/Shiv/wallpapers/ichigo-kurosaki-3840x2160-10531.png",
+    "alpha": "100",
+    "special": {
+        "background": "#000000",
+        "foreground": "#dedfdf",
+        "cursor": "#dedfdf"
+    },
+    "colors": {
+        "color0": "#000000",
+        "color1": "#E60606",
+        "color2": "#A15523",
+        "color3": "#F16E08",
+        "color4": "#908072",
+        "color5": "#A3A2A2",
+        "color6": "#BEC0C0",
+        "color7": "#dedfdf",
+        "color8": "#9b9c9c",
+        "color9": "#E60606",
+        "color10": "#A15523",
+        "color11": "#F16E08",
+        "color12": "#908072",
+        "color13": "#A3A2A2",
+        "color14": "#BEC0C0",
+        "color15": "#dedfdf"
+    }
+}
