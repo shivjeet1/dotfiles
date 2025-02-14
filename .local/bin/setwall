@@ -1,0 +1,33 @@
+#!/bin/bash
+
+if [ "$#" -eq 0 ]
+	then
+		wpic=$(ls ~/Pictures/wallpapers | shuf -n1)
+	else
+		wpic=$1
+fi
+
+xwallpaper --zoom ~/Pictures/wallpapers/$wpic
+
+read -p 'Do you liked it? Wanna continue... (y) - ' perm
+
+if [[ $perm == "y" ]]
+then
+	wal -s -i ~/Pictures/wallpapers/$wpic
+	wal-telegram -w -g
+
+	sed '/urg/d' -i ~/.cache/wal/colors-wal-dwm.h
+	sed '31s/0/256/' -i ~/.cache/wal/colors-wal-st.h
+	sed '24s/"[^"]*"/"#000000"/' -i ~/.cache/wal/colors-wal-st.h
+
+	sed "s/.*foreground.*/$(grep foreground ~/.cache/wal/colors.Xresources | head -n 1 | sed s/\*/Sxiv\./g)/" -i ~/.Xresources
+	sed "s/.*background.*/$(grep background ~/.cache/wal/colors.Xresources | head -n 1 | sed s/\*/Sxiv\./g)/" -i ~/.Xresources
+
+	cd ~/.local/src/dwm && sudo make clean install > /dev/null
+	cd ~/.local/src/st && sudo make clean install > /dev/null
+	cd ~/.local/src/dmenu && sudo make clean install > /dev/null
+
+	xrdb -load ~/.Xresources
+else
+	xwallpaper --zoom $(cat ~/.cache/wal/wal)
+fi
