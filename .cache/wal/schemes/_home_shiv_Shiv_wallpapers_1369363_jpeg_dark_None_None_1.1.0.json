@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/shiv/Shiv/wallpapers/1369363.jpeg",
+    "alpha": "100",
+    "special": {
+        "background": "#03041A",
+        "foreground": "#9ba7ce",
+        "cursor": "#9ba7ce"
+    },
+    "colors": {
+        "color0": "#03041A",
+        "color1": "#573149",
+        "color2": "#2C4D71",
+        "color3": "#5C5465",
+        "color4": "#984355",
+        "color5": "#173090",
+        "color6": "#2950A1",
+        "color7": "#9ba7ce",
+        "color8": "#6c7490",
+        "color9": "#573149",
+        "color10": "#2C4D71",
+        "color11": "#5C5465",
+        "color12": "#984355",
+        "color13": "#173090",
+        "color14": "#2950A1",
+        "color15": "#9ba7ce"
+    }
+}

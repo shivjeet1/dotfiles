@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/shiv/Shiv/wallpapers/1066532.png"
+let background = "#030305"
+let foreground = "#cee6e6"
+let cursor     = "#cee6e6"
+
+" Colors
+let color0  = "#030305"
+let color1  = "#B58571"
+let color2  = "#D09878"
+let color3  = "#EEDE52"
+let color4  = "#5F779B"
+let color5  = "#C6AF9A"
+let color6  = "#92B0D3"
+let color7  = "#cee6e6"
+let color8  = "#90a1a1"
+let color9  = "#B58571"
+let color10 = "#D09878"
+let color11 = "#EEDE52"
+let color12 = "#5F779B"
+let color13 = "#C6AF9A"
+let color14 = "#92B0D3"
+let color15 = "#cee6e6"

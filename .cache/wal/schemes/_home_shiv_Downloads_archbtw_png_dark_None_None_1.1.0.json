@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/shiv/Downloads/archbtw.png",
+    "alpha": "100",
+    "special": {
+        "background": "#000000",
+        "foreground": "#dee5eb",
+        "cursor": "#dee5eb"
+    },
+    "colors": {
+        "color0": "#000000",
+        "color1": "#B3AD0E",
+        "color2": "#125AA9",
+        "color3": "#AC0EAF",
+        "color4": "#2D9CFD",
+        "color5": "#9E9E9E",
+        "color6": "#A4D5FE",
+        "color7": "#dee5eb",
+        "color8": "#9ba0a4",
+        "color9": "#B3AD0E",
+        "color10": "#125AA9",
+        "color11": "#AC0EAF",
+        "color12": "#2D9CFD",
+        "color13": "#9E9E9E",
+        "color14": "#A4D5FE",
+        "color15": "#dee5eb"
+    }
+}

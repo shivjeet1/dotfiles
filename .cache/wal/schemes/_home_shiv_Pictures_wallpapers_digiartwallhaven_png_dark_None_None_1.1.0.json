@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/shiv/Pictures/wallpapers/digiartwallhaven.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0f1c38",
+        "foreground": "#bfc9e5",
+        "cursor": "#bfc9e5"
+    },
+    "colors": {
+        "color0": "#0f1c38",
+        "color1": "#5D68D1",
+        "color2": "#A76FB3",
+        "color3": "#638FAD",
+        "color4": "#6796D5",
+        "color5": "#41A0C7",
+        "color6": "#B29FB0",
+        "color7": "#bfc9e5",
+        "color8": "#858ca0",
+        "color9": "#5D68D1",
+        "color10": "#A76FB3",
+        "color11": "#638FAD",
+        "color12": "#6796D5",
+        "color13": "#41A0C7",
+        "color14": "#B29FB0",
+        "color15": "#bfc9e5"
+    }
+}

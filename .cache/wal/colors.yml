@@ -1,0 +1,24 @@
+wallpaper: "/home/shiv/Shiv/wallpapers/1066532.png"
+
+special:
+    background: "#030305"
+    foreground: "#cee6e6"
+    cursor: "#cee6e6"
+
+colors:
+    color0: "#030305"
+    color1: "#B58571"
+    color2: "#D09878"
+    color3: "#EEDE52"
+    color4: "#5F779B"
+    color5: "#C6AF9A"
+    color6: "#92B0D3"
+    color7: "#cee6e6"
+    color8: "#90a1a1"
+    color9: "#B58571"
+    color10: "#D09878"
+    color11: "#EEDE52"
+    color12: "#5F779B"
+    color13: "#C6AF9A"
+    color14: "#92B0D3"
+    color15: "#cee6e6"
