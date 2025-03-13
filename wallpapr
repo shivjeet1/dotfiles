@@ -1,0 +1,3 @@
+#!/bin/sh
+hyprctl hyprpaper reload ,$(cat  /home/shiv/.cache/wal/wal)
+
