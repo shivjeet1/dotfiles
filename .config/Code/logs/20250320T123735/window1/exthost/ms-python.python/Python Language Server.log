@@ -1,0 +1,35 @@
+2025-03-20 12:37:42.442 [info] (Client) Pylance async client (2025.3.2) started with python extension (2025.2.0)
+2025-03-20 12:37:44.658 [info] [Info  - 12:37:44] (40595) Server root directory: file:///home/shiv/.vscode/extensions/ms-python.vscode-pylance-2025.3.2/dist
+2025-03-20 12:37:44.664 [info] [Info  - 12:37:44] (40595) Pylance language server 2025.3.2 (pyright version 1.1.396, commit 3e2236a7) starting
+2025-03-20 12:37:44.695 [info] [Info  - 12:37:44] (40595) Starting service instance "<default>"
+2025-03-20 12:37:44.751 [info] [Info  - 12:37:44] (40595) Setting environmentName for service "<default>": "3.13.2 (sip-dev venv)"
+2025-03-20 12:37:44.751 [info] [Info  - 12:37:44] (40595) Setting pythonPath for service "<default>": "/home/shiv/devthon/sip-dev/bin/python"
+2025-03-20 12:37:44.751 [info] [Info  - 12:37:44] (40595) No include entries specified; assuming /<default workspace root>
+2025-03-20 12:37:44.751 [info] [Info  - 12:37:44] (40595) Auto-excluding **/node_modules
+2025-03-20 12:37:44.751 [info] [Info  - 12:37:44] (40595) Auto-excluding **/__pycache__
+2025-03-20 12:37:44.751 [info] [Info  - 12:37:44] (40595) Auto-excluding **/.*
+2025-03-20 12:37:44.788 [info] [Info  - 12:37:44] (40595) Assuming Python version 3.13.2.final.0
+2025-03-20 12:37:44.965 [info] [Error - 12:37:44] (40595) File or directory "/<default workspace root>" does not exist.
+2025-03-20 12:37:44.967 [info] [Info  - 12:37:44] (40595) No source files found.
+2025-03-20 12:37:45.022 [info] [Info  - 12:37:45] (40595) Setting environmentName for service "<default>": "3.13.2 (sip-dev venv)"
+2025-03-20 12:37:45.023 [info] [Info  - 12:37:45] (40595) Setting pythonPath for service "<default>": "/home/shiv/devthon/sip-dev/bin/python"
+2025-03-20 12:37:45.023 [info] [Info  - 12:37:45] (40595) No include entries specified; assuming /<default workspace root>
+2025-03-20 12:37:45.023 [info] [Info  - 12:37:45] (40595) Auto-excluding **/node_modules
+2025-03-20 12:37:45.023 [info] [Info  - 12:37:45] (40595) Auto-excluding **/__pycache__
+2025-03-20 12:37:45.023 [info] [Info  - 12:37:45] (40595) Auto-excluding **/.*
+2025-03-20 12:37:45.058 [info] [Info  - 12:37:45] (40595) Assuming Python version 3.13.2.final.0
+2025-03-20 12:37:45.123 [info] [Error - 12:37:45] (40595) File or directory "/<default workspace root>" does not exist.
+2025-03-20 12:37:45.123 [info] [Info  - 12:37:45] (40595) No source files found.
+2025-03-20 12:37:45.623 [info] [Info  - 12:37:45] (40595) Background analysis(1) root directory: file:///home/shiv/.vscode/extensions/ms-python.vscode-pylance-2025.3.2/dist
+2025-03-20 12:37:45.625 [info] [Info  - 12:37:45] (40595) Background analysis(1) started
+2025-03-20 12:37:50.496 [info] [Info  - 12:37:50] (40595) [BG(1)] Long operation: SemanticTokens range 0:0 - 96:65 at file:///home/shiv/devthon/gui.py (4665ms)
+2025-03-20 12:38:22.272 [info] [Info  - 12:38:22] (40595) Setting environmentName for service "<default>": "3.13.2 (sip-dev venv)"
+2025-03-20 12:38:22.272 [info] [Info  - 12:38:22] (40595) Setting pythonPath for service "<default>": "/home/shiv/devthon/sip-dev/bin/python"
+2025-03-20 12:38:22.272 [info] [Info  - 12:38:22] (40595) No include entries specified; assuming /<default workspace root>
+2025-03-20 12:38:22.272 [info] [Info  - 12:38:22] (40595) Auto-excluding **/node_modules
+2025-03-20 12:38:22.272 [info] [Info  - 12:38:22] (40595) Auto-excluding **/__pycache__
+2025-03-20 12:38:22.272 [info] [Info  - 12:38:22] (40595) Auto-excluding **/.*
+2025-03-20 12:38:22.320 [info] [Info  - 12:38:22] (40595) Assuming Python version 3.13.2.final.0
+2025-03-20 12:38:22.396 [info] [Error - 12:38:22] (40595) File or directory "/<default workspace root>" does not exist.
+2025-03-20 12:38:22.397 [info] [Info  - 12:38:22] (40595) No source files found.
+2025-03-20 12:38:26.991 [info] [Info  - 12:38:26] (40595) [BG(1)] Long operation: SemanticTokens delta previousResultId:1742454493971 at file:///home/shiv/devthon/gui.py (2435ms)

@@ -1,0 +1,171 @@
+2025-03-20 12:37:37.045 [info] Started local extension host with pid 40378.
+2025-03-20 12:37:37.581 [warning] [twxs.cmake]: Cannot register 'cmake.cmakePath'. This property is already registered.
+2025-03-20 12:37:38.802 [info] Settings Sync: Token updated for the account shivjeet1
+2025-03-20 12:37:39.039 [info] Settings Sync: Account status changed from uninitialized to available
+2025-03-20 12:37:57.940 [error] Error while getting the latest version for the extension ecmel.vscode-html-css. Fetch timeout: 10000ms
+2025-03-20 12:37:57.942 [error] Error while getting the latest version for the extension github.copilot. Fetch timeout: 10000ms
+2025-03-20 12:37:57.944 [error] Error while getting the latest version for the extension github.copilot-chat. Fetch timeout: 10000ms
+2025-03-20 12:37:57.946 [error] Error while getting the latest version for the extension ms-python.debugpy. Fetch timeout: 10000ms
+2025-03-20 12:37:57.948 [error] Error while getting the latest version for the extension ms-python.python. Fetch timeout: 10000ms
+2025-03-20 12:37:57.949 [error] Error while getting the latest version for the extension ms-python.vscode-pylance. Fetch timeout: 10000ms
+2025-03-20 12:37:57.951 [error] Error while getting the latest version for the extension ms-vscode.cmake-tools. Fetch timeout: 10000ms
+2025-03-20 12:37:57.952 [error] Error while getting the latest version for the extension ms-vscode.cpptools-extension-pack. Fetch timeout: 10000ms
+2025-03-20 12:37:57.954 [error] Error while getting the latest version for the extension ms-vscode.cpptools-themes. Fetch timeout: 10000ms
+2025-03-20 12:37:57.955 [error] Error while getting the latest version for the extension ritwickdey.liveserver. Fetch timeout: 10000ms
+2025-03-20 12:37:57.957 [error] Error while getting the latest version for the extension twxs.cmake. Fetch timeout: 10000ms
+2025-03-20 12:37:57.959 [error] Error while getting the latest version for the extension visualstudioexptteam.intellicode-api-usage-examples. Fetch timeout: 10000ms
+2025-03-20 12:37:57.961 [error] Error while getting the latest version for the extension vscjava.vscode-java-debug. Fetch timeout: 10000ms
+2025-03-20 12:37:57.963 [error] Error while getting the latest version for the extension vscjava.vscode-java-dependency. Fetch timeout: 10000ms
+2025-03-20 12:37:57.965 [error] Error while getting the latest version for the extension vscjava.vscode-java-pack. Fetch timeout: 10000ms
+2025-03-20 12:37:57.966 [error] Error while getting the latest version for the extension vscjava.vscode-java-test. Fetch timeout: 10000ms
+2025-03-20 12:37:57.967 [error] Error while getting the latest version for the extension vscjava.vscode-maven. Fetch timeout: 10000ms
+2025-03-20 12:38:05.125 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:06.323 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:09.372 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:10.617 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:12.571 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:14.026 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:18.848 [error] [chat setup] request: error TypeError: Failed to fetch
+2025-03-20 12:38:19.565 [warning] Failed to fetch chat participant registry Failed to fetch
+2025-03-20 12:38:23.587 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:27.272 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:32.546 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:34.489 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:35.534 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:38.273 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:39.565 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:45.767 [error] An unknown error occurred. Please consult the log for more details.
+2025-03-20 12:38:47.431 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:48.487 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:49.623 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:52.758 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:53.848 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:58.957 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:39:39.830 [error] [Extension Host] [default] Error sending telemetry FetchError: getaddrinfo EAI_AGAIN copilot-telemetry.githubusercontent.com
+    at fetch (/home/shiv/.vscode/extensions/github.copilot-1.288.0/node_modules/@adobe/helix-fetch/src/fetch/index.js:99:11)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at cachingFetch (/home/shiv/.vscode/extensions/github.copilot-1.288.0/node_modules/@adobe/helix-fetch/src/fetch/index.js:288:16)
+    at vle.fetch (/home/shiv/.vscode/extensions/github.copilot-1.288.0/lib/src/network/helix.ts:94:22) {
+  type: 'system',
+  _name: 'FetchError',
+  code: 'EAI_AGAIN',
+  errno: -3001,
+  erroredSysCall: 'getaddrinfo'
+}
+2025-03-20 12:40:19.337 [info] [perf] Render performance baseline is 49ms
+2025-03-20 12:43:49.964 [warning] Failed to fetch chat participant registry Failed to fetch
+2025-03-20 12:47:29.071 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:49:05.671 [warning] Failed to fetch chat participant registry Failed to fetch
+2025-03-20 12:54:23.723 [warning] Failed to fetch chat participant registry Failed to fetch
+2025-03-20 12:56:59.711 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 13:07:23.668 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)

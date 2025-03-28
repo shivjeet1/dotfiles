@@ -1,0 +1,15 @@
+2025-03-19 21:10:39.860 [info] Experiment 'pythonaacf' is active
+2025-03-19 21:10:39.860 [info] Experiment 'pythonRecommendTensorboardExt' is active
+2025-03-19 21:10:39.860 [info] Experiment 'pythonSurveyNotificationcf' is active
+2025-03-19 21:10:39.860 [info] Experiment 'pythonTerminalEnvVarActivation' is active
+2025-03-19 21:10:39.860 [info] Experiment 'pythonTestAdapter' is active
+2025-03-19 21:10:39.860 [info] VS Code was launched from an activated environment: 'sip-dev', selecting it as the interpreter for workspace.
+2025-03-19 21:10:39.860 [info] Python interpreter path: ~/devthon/sip-dev/bin/python
+2025-03-19 21:10:44.047 [info] > . ~/devthon/sip-dev/bin/activate && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python ~/.vscode/extensions/ms-python.python-2025.2.0-linux-x64/python_files/printEnvVariables.py
+2025-03-19 21:10:44.047 [info] shell: zsh
+2025-03-19 21:10:44.165 [info] > /bin/python ~/.vscode/extensions/ms-python.python-2025.2.0-linux-x64/python_files/printEnvVariables.py
+2025-03-19 21:10:44.165 [info] shell: zsh
+2025-03-19 21:10:44.230 [info] Prepending environment variable PATH in collection with /home/shiv/.vscode/extensions/ms-python.python-2025.2.0-linux-x64/python_files/deactivate/zsh:/home/shiv/devthon/sip-dev/bin: {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2025-03-19 21:10:44.230 [info] Prepending environment variable PS1 in collection with sip-dev {"applyAtShellIntegration":true,"applyAtProcessCreation":false}
+2025-03-19 21:10:44.231 [info] Send text to terminal: /bin/python /home/shiv/.vscode/extensions/ms-python.python-2025.2.0-linux-x64/python_files/printEnvVariablesToFile.py /home/shiv/.vscode/extensions/ms-python.python-2025.2.0-linux-x64/python_files/deactivate/zsh/envVars.txt
+2025-03-19 21:10:47.385 [info] Starting Pylance language server.

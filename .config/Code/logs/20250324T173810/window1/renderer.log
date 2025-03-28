@@ -1,0 +1,21 @@
+2025-03-24 17:38:11.122 [info] Started local extension host with pid 34769.
+2025-03-24 17:38:11.499 [warning] [twxs.cmake]: Cannot register 'cmake.cmakePath'. This property is already registered.
+2025-03-24 17:38:12.349 [info] Settings Sync: Token updated for the account shivjeet1
+2025-03-24 17:38:12.357 [info] Settings Sync: Account status changed from uninitialized to available
+2025-03-24 17:38:13.883 [info] [perf] Render performance baseline is 26ms
+2025-03-24 17:39:11.624 [info] Started local extension host with pid 35870.
+2025-03-24 17:39:12.042 [warning] [twxs.cmake]: Cannot register 'cmake.cmakePath'. This property is already registered.
+2025-03-24 17:39:12.653 [info] Settings Sync: Token updated for the account shivjeet1
+2025-03-24 17:39:12.706 [info] Settings Sync: Account status changed from uninitialized to available
+2025-03-24 17:39:14.273 [info] [perf] Render performance baseline is 32ms
+2025-03-24 17:39:31.147 [error] Failed: Failed to fetch
+    at uqe.F (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:1834:55392)
+    at async uqe.D (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:1834:52126)
+    at async uqe.D (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:1834:53575)
+    at async o (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:1834:51091)
+    at async uqe.query (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:1834:51377)
+    at async Cnt.queryGallery (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2496:14349)
+    at async Promise.all (index 0)
+    at async mBs.Oc (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2288:22019)
+    at async mBs.yc (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2288:13955)
+    at async vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2288:12277

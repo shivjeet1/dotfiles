@@ -1,0 +1,351 @@
+2025-03-20 12:37:37.851 [info] Extension host with pid 40378 started
+2025-03-20 12:37:38.011 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-03-20 12:37:38.056 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-03-20 12:37:38.094 [info] ExtensionService#_doActivateExtension ms-python.python, startup: false, activationEvent: 'onLanguage:python', root cause: ms-python.debugpy
+2025-03-20 12:37:38.414 [info] ExtensionService#_doActivateExtension VisualStudioExptTeam.intellicode-api-usage-examples, startup: false, activationEvent: 'onLanguage:python'
+2025-03-20 12:37:38.916 [info] ExtensionService#_doActivateExtension ms-python.debugpy, startup: false, activationEvent: 'onLanguage:python'
+2025-03-20 12:37:39.006 [info] ExtensionService#_doActivateExtension ms-python.vscode-pylance, startup: false, activationEvent: 'onLanguage:python'
+2025-03-20 12:37:39.639 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-03-20 12:37:39.734 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-03-20 12:37:39.809 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-03-20 12:37:39.913 [info] Eager extensions activated
+2025-03-20 12:37:40.036 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-03-20 12:37:40.040 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-03-20 12:37:40.069 [info] ExtensionService#_doActivateExtension ecmel.vscode-html-css, startup: false, activationEvent: 'onStartupFinished'
+2025-03-20 12:37:40.072 [info] ExtensionService#_doActivateExtension GitHub.copilot, startup: false, activationEvent: 'onStartupFinished'
+2025-03-20 12:37:40.722 [info] ExtensionService#_doActivateExtension GitHub.copilot-chat, startup: false, activationEvent: 'onStartupFinished'
+2025-03-20 12:37:41.582 [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: false, activationEvent: 'onStartupFinished'
+2025-03-20 12:38:05.090 [error] [VisualStudioExptTeam.intellicode-api-usage-examples] provider FAILED
+2025-03-20 12:38:05.121 [error] Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:06.318 [error] [VisualStudioExptTeam.intellicode-api-usage-examples] provider FAILED
+2025-03-20 12:38:06.319 [error] Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:09.369 [error] [VisualStudioExptTeam.intellicode-api-usage-examples] provider FAILED
+2025-03-20 12:38:09.369 [error] Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:09.605 [error] [VisualStudioExptTeam.intellicode-api-usage-examples] provider FAILED
+2025-03-20 12:38:09.605 [error] Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:09.816 [error] [VisualStudioExptTeam.intellicode-api-usage-examples] provider FAILED
+2025-03-20 12:38:09.816 [error] Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:10.612 [error] [VisualStudioExptTeam.intellicode-api-usage-examples] provider FAILED
+2025-03-20 12:38:10.612 [error] Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:12.542 [error] [VisualStudioExptTeam.intellicode-api-usage-examples] provider FAILED
+2025-03-20 12:38:12.542 [error] Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:12.804 [error] [VisualStudioExptTeam.intellicode-api-usage-examples] provider FAILED
+2025-03-20 12:38:12.804 [error] Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:13.080 [error] [VisualStudioExptTeam.intellicode-api-usage-examples] provider FAILED
+2025-03-20 12:38:13.081 [error] Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:14.024 [error] [VisualStudioExptTeam.intellicode-api-usage-examples] provider FAILED
+2025-03-20 12:38:14.025 [error] Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:14.955 [error] [VisualStudioExptTeam.intellicode-api-usage-examples] provider FAILED
+2025-03-20 12:38:14.955 [error] Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:23.586 [error] [VisualStudioExptTeam.intellicode-api-usage-examples] provider FAILED
+2025-03-20 12:38:23.586 [error] Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:24.387 [error] [VisualStudioExptTeam.intellicode-api-usage-examples] provider FAILED
+2025-03-20 12:38:24.388 [error] Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:27.269 [error] [VisualStudioExptTeam.intellicode-api-usage-examples] provider FAILED
+2025-03-20 12:38:27.270 [error] Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:32.530 [error] [VisualStudioExptTeam.intellicode-api-usage-examples] provider FAILED
+2025-03-20 12:38:32.530 [error] Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:33.247 [error] [VisualStudioExptTeam.intellicode-api-usage-examples] provider FAILED
+2025-03-20 12:38:33.247 [error] Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:34.488 [error] [VisualStudioExptTeam.intellicode-api-usage-examples] provider FAILED
+2025-03-20 12:38:34.488 [error] Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:34.957 [error] [VisualStudioExptTeam.intellicode-api-usage-examples] provider FAILED
+2025-03-20 12:38:34.957 [error] Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:35.530 [error] [VisualStudioExptTeam.intellicode-api-usage-examples] provider FAILED
+2025-03-20 12:38:35.531 [error] Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:38.271 [error] [VisualStudioExptTeam.intellicode-api-usage-examples] provider FAILED
+2025-03-20 12:38:38.272 [error] Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:38.721 [error] [VisualStudioExptTeam.intellicode-api-usage-examples] provider FAILED
+2025-03-20 12:38:38.721 [error] Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:39.563 [error] [VisualStudioExptTeam.intellicode-api-usage-examples] provider FAILED
+2025-03-20 12:38:39.563 [error] Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:40.134 [error] [VisualStudioExptTeam.intellicode-api-usage-examples] provider FAILED
+2025-03-20 12:38:40.135 [error] Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:45.763 [error] FetchError: getaddrinfo EAI_AGAIN api.github.com
+    at fetch (/home/shiv/.vscode/extensions/github.copilot-1.288.0/node_modules/@adobe/helix-fetch/src/fetch/index.js:99:11)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at cachingFetch (/home/shiv/.vscode/extensions/github.copilot-1.288.0/node_modules/@adobe/helix-fetch/src/fetch/index.js:288:16)
+    at vle.fetch (/home/shiv/.vscode/extensions/github.copilot-1.288.0/lib/src/network/helix.ts:94:22)
+    at fetchCopilotToken (/home/shiv/.vscode/extensions/github.copilot-1.288.0/lib/src/auth/copilotToken.ts:206:16)
+    at authFromGitHubToken (/home/shiv/.vscode/extensions/github.copilot-1.288.0/lib/src/auth/copilotToken.ts:130:22)
+    at Rme.fetchCopilotTokenEnvelope (/home/shiv/.vscode/extensions/github.copilot-1.288.0/lib/src/auth/copilotTokenManager.ts:93:29)
+2025-03-20 12:38:47.426 [error] [VisualStudioExptTeam.intellicode-api-usage-examples] provider FAILED
+2025-03-20 12:38:47.427 [error] Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:47.821 [error] [VisualStudioExptTeam.intellicode-api-usage-examples] provider FAILED
+2025-03-20 12:38:47.821 [error] Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:48.484 [error] [VisualStudioExptTeam.intellicode-api-usage-examples] provider FAILED
+2025-03-20 12:38:48.485 [error] Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:48.975 [error] [VisualStudioExptTeam.intellicode-api-usage-examples] provider FAILED
+2025-03-20 12:38:48.976 [error] Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:49.619 [error] [VisualStudioExptTeam.intellicode-api-usage-examples] provider FAILED
+2025-03-20 12:38:49.620 [error] Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:52.757 [error] [VisualStudioExptTeam.intellicode-api-usage-examples] provider FAILED
+2025-03-20 12:38:52.757 [error] Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:53.844 [error] [VisualStudioExptTeam.intellicode-api-usage-examples] provider FAILED
+2025-03-20 12:38:53.845 [error] Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:38:58.956 [error] [VisualStudioExptTeam.intellicode-api-usage-examples] provider FAILED
+2025-03-20 12:38:58.956 [error] Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:47:29.067 [error] [VisualStudioExptTeam.intellicode-api-usage-examples] provider FAILED
+2025-03-20 12:47:29.067 [error] Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 12:56:59.207 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-03-20 12:56:59.223 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-03-20 12:56:59.312 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-03-20 12:56:59.710 [error] [VisualStudioExptTeam.intellicode-api-usage-examples] provider FAILED
+2025-03-20 12:56:59.710 [error] Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 13:07:23.663 [error] [VisualStudioExptTeam.intellicode-api-usage-examples] provider FAILED
+2025-03-20 13:07:23.664 [error] Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 13:07:23.914 [error] [VisualStudioExptTeam.intellicode-api-usage-examples] provider FAILED
+2025-03-20 13:07:23.914 [error] Error: Unhandled method getIdAtPosition
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+    at re (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+    at /home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+    at Immediate.<anonymous> (/home/shiv/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+    at processImmediate (node:internal/timers:483:21)
+2025-03-20 13:07:58.521 [info] Extension host terminating: renderer closed the MessagePort
+2025-03-20 13:07:58.591 [error] Canceled: Canceled
+    at new dR (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:111670)
+    at qy.U (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:116281)
+    at Proxy.s.<computed>.n.charCodeAt.s.<computed> (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:113775)
+    at Sw.g (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:41039)
+    at Sw.executeCommand (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:40543)
+    at r.registerCommand.description (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:39873)
+    at Sw.h (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:41559)
+    at Sw.g (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:40636)
+    at Sw.executeCommand (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:40543)
+    at Object.executeCommand (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:172:37375)
+    at Th.L [as value] (/opt/visual-studio-code/resources/app/extensions/git/dist/main.js:2:1000063)
+    at P.B (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2375)
+    at P.C (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2445)
+    at P.fire (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2662)
+    at Object.p [as dispose] (/opt/visual-studio-code/resources/app/extensions/git/dist/main.js:2:1022703)
+    at /opt/visual-studio-code/resources/app/extensions/git/dist/main.js:2:1029021
+    at Array.forEach (<anonymous>)
+    at b.dispose (/opt/visual-studio-code/resources/app/extensions/git/dist/main.js:2:1029007)
+    at fv.<anonymous> (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:108:8922)
+    at fv.dispose (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:108:9018)
+    at fv.<anonymous> (/opt/visual-studio-code/resources/app/extensions/git/dist/main.js:2:1002547)
+    at fv.dispose (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:108:9018)
+    at hi (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:701)
+    at file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:14994
+    at file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:1011
+    at Object.dispose (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:8:705)
+    at zz.eb (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:11921)
+    at file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:9876
+    at Array.map (<anonymous>)
+    at zz.$ (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:9864)
+    at zz.terminate (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:10107)
+    at OI.terminate (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:117:1434)
+    at ts (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:190:15108)
+    at MessagePortMain.<anonymous> (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:190:11656)
+    at MessagePortMain.emit (node:events:518:28)
+    at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949) setContext undefined
+2025-03-20 13:07:58.595 [error] Canceled: Canceled
+    at new dR (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:111670)
+    at qy.U (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:116281)
+    at Proxy.s.<computed>.n.charCodeAt.s.<computed> (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:113775)
+    at Sw.g (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:41039)
+    at Sw.executeCommand (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:40543)
+    at r.registerCommand.description (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:39873)
+    at Sw.h (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:41559)
+    at Sw.g (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:40636)
+    at Sw.executeCommand (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:40543)
+    at Object.executeCommand (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:172:37375)
+    at t.VscodeDevShareProvider.set hasGitHubRepositories [as hasGitHubRepositories] (/opt/visual-studio-code/resources/app/extensions/github/dist/extension.js:2:217805)
+    at /opt/visual-studio-code/resources/app/extensions/github/dist/extension.js:2:218764
+    at Th.value (/opt/visual-studio-code/resources/app/extensions/git/dist/main.js:2:1120702)
+    at P.B (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2375)
+    at P.C (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2445)
+    at P.fire (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2662)
+    at Object.p [as dispose] (/opt/visual-studio-code/resources/app/extensions/git/dist/main.js:2:1022703)
+    at /opt/visual-studio-code/resources/app/extensions/git/dist/main.js:2:1029021
+    at Array.forEach (<anonymous>)
+    at b.dispose (/opt/visual-studio-code/resources/app/extensions/git/dist/main.js:2:1029007)
+    at fv.<anonymous> (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:108:8922)
+    at fv.dispose (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:108:9018)
+    at fv.<anonymous> (/opt/visual-studio-code/resources/app/extensions/git/dist/main.js:2:1002547)
+    at fv.dispose (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:108:9018)
+    at hi (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:701)
+    at file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:14994
+    at file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:1011
+    at Object.dispose (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:8:705)
+    at zz.eb (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:11921)
+    at file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:9876
+    at Array.map (<anonymous>)
+    at zz.$ (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:9864)
+    at zz.terminate (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:10107)
+    at OI.terminate (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:117:1434)
+    at ts (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:190:15108)
+    at MessagePortMain.<anonymous> (file:///opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:190:11656)
+    at MessagePortMain.emit (node:events:518:28)
+    at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949) setContext undefined
+2025-03-20 13:07:58.615 [info] Extension host with pid 40378 exiting with code 0

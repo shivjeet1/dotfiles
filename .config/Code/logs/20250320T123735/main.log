@@ -1,0 +1,13 @@
+2025-03-20 12:37:35.976 [info] update#setState idle
+2025-03-20 12:38:05.943 [info] update#setState checking for updates
+2025-03-20 12:40:18.856 [error] #1: https://update.code.visualstudio.com/api/update/linux-x64/stable/ddc367ed5c8936efe395cffeec279b04ffd7db78 - error undefined net::ERR_CONNECTION_TIMED_OUT
+2025-03-20 12:40:18.859 [error] update#isLatestVersion(): failed to check for updates
+2025-03-20 12:40:18.860 [error] Error: net::ERR_CONNECTION_TIMED_OUT
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:118774)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+2025-03-20 12:40:18.867 [error] #2: https://update.code.visualstudio.com/api/update/linux-x64/stable/ddc367ed5c8936efe395cffeec279b04ffd7db78 - error undefined net::ERR_CONNECTION_TIMED_OUT
+2025-03-20 12:40:18.867 [error] Error: net::ERR_CONNECTION_TIMED_OUT
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:118774)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+2025-03-20 12:40:18.868 [info] update#setState idle
+2025-03-20 13:07:58.616 [info] Extension host with pid 40378 exited with code: 0, signal: unknown.

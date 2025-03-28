@@ -1,0 +1,28 @@
+2025-03-19 20:27:58.255 [info] [main] Log level: Info
+2025-03-19 20:27:58.255 [info] [main] Validating found git in: "git"
+2025-03-19 20:27:58.255 [info] [main] Using git "2.49.0" from "git"
+2025-03-19 20:27:58.255 [info] [Model][doInitialScan] Initial repository scan started
+2025-03-19 20:27:58.255 [info] > git rev-parse --show-toplevel [58ms]
+2025-03-19 20:27:58.255 [info] > git rev-parse --git-dir --git-common-dir [1607ms]
+2025-03-19 20:27:58.255 [info] [Model][openRepository] Opened repository: /home/shiv/devthon
+2025-03-19 20:27:58.255 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-03-19 20:27:58.258 [info] > git config --get commit.template [75ms]
+2025-03-19 20:27:58.323 [info] > git show --textconv :gui.py [34ms]
+2025-03-19 20:27:58.367 [info] > git ls-files --stage -- gui.py [47ms]
+2025-03-19 20:27:58.390 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [34ms]
+2025-03-19 20:27:58.469 [info] > git status -z -uall [64ms]
+2025-03-19 20:27:58.469 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [44ms]
+2025-03-19 20:27:58.530 [info] > git cat-file -s a57226c459f6912951177728ccdae0973e446008 [145ms]
+2025-03-19 20:27:58.561 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [36ms]
+2025-03-19 20:27:58.621 [info] > git config --get --local branch.master.vscode-merge-base [39ms]
+2025-03-19 20:27:58.621 [warning] [Git][config] git config failed: Failed to execute git
+2025-03-19 20:27:58.636 [info] > git config --get commit.template [86ms]
+2025-03-19 20:27:58.641 [info] > git reflog master --grep-reflog=branch: Created from *. [5ms]
+2025-03-19 20:27:58.683 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [20ms]
+2025-03-19 20:27:58.683 [info] fatal: ref refs/remotes/origin/HEAD is not a symbolic ref
+2025-03-19 20:27:58.683 [warning] [Repository][getDefaultBranch] Failed to get default branch details: Failed to execute git.
+2025-03-19 20:27:58.690 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [8ms]
+2025-03-19 20:27:58.772 [info] > git status -z -uall [65ms]
+2025-03-19 20:27:58.772 [info] > git check-ignore -v -z --stdin [34ms]
+2025-03-19 20:27:58.772 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [50ms]
+2025-03-19 20:27:58.818 [info] > git blame --root --incremental 5f188437932779c8905637df23db0d377fa9de3a -- gui.py [19ms]

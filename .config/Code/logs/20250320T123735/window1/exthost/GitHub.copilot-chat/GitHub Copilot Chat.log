@@ -1,0 +1,74 @@
+2025-03-20 12:37:42.669 [info] Using the Electron fetcher.
+2025-03-20 12:37:42.669 [info] Initializing Git extension service.
+2025-03-20 12:37:42.669 [info] Successfully activated the vscode.git extension.
+2025-03-20 12:37:42.669 [info] Enablement state of the vscode.git extension: true.
+2025-03-20 12:37:42.669 [info] Successfully registered Git commit message provider.
+2025-03-20 12:37:44.750 [info] Logged in as shivjeet1
+2025-03-20 12:38:24.799 [error] Error: net::ERR_NAME_NOT_RESOLVED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/utility_init:2:10511)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28): Failed to get copilot token
+2025-03-20 12:38:24.799 [error] GitHub Copilot could not connect to server. Extension activation failed: "net::ERR_NAME_NOT_RESOLVED"
+2025-03-20 12:38:24.799 [warning] [LanguageModelAccess] LanguageModel/Embeddings are not available without auth token
+2025-03-20 12:38:24.800 [error] Error: net::ERR_NAME_NOT_RESOLVED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/utility_init:2:10511)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+2025-03-20 12:38:24.800 [warning] [LanguageModelAccess] LanguageModel/Embeddings are not available without auth token
+2025-03-20 12:38:24.800 [error] Error: net::ERR_NAME_NOT_RESOLVED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/utility_init:2:10511)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+2025-03-20 12:38:24.800 [info] activationBlocker from 'languageModelAccess' took for 31128ms
+2025-03-20 12:38:58.923 [info] Logged in as shivjeet1
+2025-03-20 12:40:01.200 [info] copilot token chat_enabled: undefined, sku: 
+2025-03-20 12:40:01.206 [error] GitHub Copilot could not connect to server. Extension activation failed: "net::ERR_CONNECTION_CLOSED"
+2025-03-20 12:40:01.218 [info] Logged in as shivjeet1
+2025-03-20 12:40:30.184 [error] GitHub Copilot could not connect to server. Extension activation failed: "net::ERR_CONNECTION_CLOSED"
+2025-03-20 12:40:30.184 [warning] [LanguageModelAccess] LanguageModel/Embeddings are not available without auth token
+2025-03-20 12:40:30.184 [error] Error: net::ERR_CONNECTION_CLOSED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/utility_init:2:10511)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+2025-03-20 12:40:30.184 [warning] [LanguageModelAccess] LanguageModel/Embeddings are not available without auth token
+2025-03-20 12:40:30.184 [error] Error: net::ERR_CONNECTION_CLOSED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/utility_init:2:10511)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+2025-03-20 12:55:30.215 [info] Logged in as shivjeet1
+2025-03-20 12:55:45.067 [info] copilot token chat_enabled: undefined, sku: 
+2025-03-20 12:55:45.068 [warning] [LanguageModelAccess] LanguageModel/Embeddings are not available without auth token
+2025-03-20 12:55:45.068 [error] Error: net::ERR_ADDRESS_UNREACHABLE
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/utility_init:2:10511)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+2025-03-20 12:55:45.099 [info] Logged in as shivjeet1
+2025-03-20 12:55:45.108 [info] copilot token chat_enabled: undefined, sku: 
+2025-03-20 12:55:45.114 [error] GitHub Copilot could not connect to server. Extension activation failed: "net::ERR_NAME_NOT_RESOLVED"
+2025-03-20 12:55:45.114 [warning] [LanguageModelAccess] LanguageModel/Embeddings are not available without auth token
+2025-03-20 12:55:45.114 [error] Error: net::ERR_NAME_NOT_RESOLVED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/utility_init:2:10511)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+2025-03-20 12:55:45.114 [warning] [LanguageModelAccess] LanguageModel/Embeddings are not available without auth token
+2025-03-20 12:55:45.114 [error] Error: net::ERR_NAME_NOT_RESOLVED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/utility_init:2:10511)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+2025-03-20 12:55:45.135 [info] Logged in as shivjeet1
+2025-03-20 12:55:45.142 [error] GitHub Copilot could not connect to server. Extension activation failed: "net::ERR_NAME_NOT_RESOLVED"
+2025-03-20 12:55:45.142 [warning] [LanguageModelAccess] LanguageModel/Embeddings are not available without auth token
+2025-03-20 12:55:45.142 [error] Error: net::ERR_NAME_NOT_RESOLVED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/utility_init:2:10511)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+2025-03-20 12:55:45.142 [warning] [LanguageModelAccess] LanguageModel/Embeddings are not available without auth token
+2025-03-20 12:55:45.142 [error] Error: net::ERR_NAME_NOT_RESOLVED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/utility_init:2:10511)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+2025-03-20 13:07:26.737 [info] Logged in as shivjeet1
+2025-03-20 13:07:26.739 [info] copilot token chat_enabled: undefined, sku: 
+2025-03-20 13:07:26.741 [error] GitHub Copilot could not connect to server. Extension activation failed: "net::ERR_INTERNET_DISCONNECTED"
+2025-03-20 13:07:26.751 [info] Logged in as shivjeet1
+2025-03-20 13:07:26.754 [error] GitHub Copilot could not connect to server. Extension activation failed: "net::ERR_INTERNET_DISCONNECTED"
+2025-03-20 13:07:26.754 [warning] [LanguageModelAccess] LanguageModel/Embeddings are not available without auth token
+2025-03-20 13:07:26.754 [error] Error: net::ERR_INTERNET_DISCONNECTED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/utility_init:2:10511)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+2025-03-20 13:07:26.754 [warning] [LanguageModelAccess] LanguageModel/Embeddings are not available without auth token
+2025-03-20 13:07:26.754 [error] Error: net::ERR_INTERNET_DISCONNECTED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/utility_init:2:10511)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+2025-03-20 13:07:35.703 [info] Logged in as shivjeet1
+2025-03-20 13:07:35.710 [error] GitHub Copilot could not connect to server. Extension activation failed: "net::ERR_INTERNET_DISCONNECTED"

@@ -1,0 +1,30 @@
+2025-03-21 15:01:11.466 [info] [main] Log level: Info
+2025-03-21 15:01:11.466 [info] [main] Validating found git in: "git"
+2025-03-21 15:01:11.466 [info] [main] Using git "2.49.0" from "git"
+2025-03-21 15:01:11.466 [info] [Model][doInitialScan] Initial repository scan started
+2025-03-21 15:01:11.466 [info] > git rev-parse --show-toplevel [8ms]
+2025-03-21 15:01:11.466 [info] > git rev-parse --git-dir --git-common-dir [2ms]
+2025-03-21 15:01:11.466 [info] [Model][openRepository] Opened repository: /home/shiv/Documents/Clg-practicals
+2025-03-21 15:01:11.466 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-03-21 15:01:11.469 [info] > git config --get commit.template [2ms]
+2025-03-21 15:01:13.657 [info] > git check-ignore -v -z --stdin [51ms]
+2025-03-21 15:01:13.658 [info] > git show --textconv :C-bot/sjf-non-premptive.c [27ms]
+2025-03-21 15:01:13.658 [info] > git ls-files --stage -- C-bot/sjf-non-premptive.c [12ms]
+2025-03-21 15:01:13.675 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [83ms]
+2025-03-21 15:01:13.680 [info] > git cat-file -s 3330694858e1327d6ba26b94306c64881383a35e [7ms]
+2025-03-21 15:01:13.725 [info] > git status -z -uall [25ms]
+2025-03-21 15:01:13.726 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2025-03-21 15:01:13.804 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [24ms]
+2025-03-21 15:01:13.825 [info] > git config --get --local branch.master.vscode-merge-base [4ms]
+2025-03-21 15:01:13.841 [info] > git config --get commit.template [39ms]
+2025-03-21 15:01:13.847 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/master refs/remotes/origin/master [7ms]
+2025-03-21 15:01:13.945 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [63ms]
+2025-03-21 15:01:13.945 [info] > git merge-base refs/heads/master refs/remotes/origin/master [79ms]
+2025-03-21 15:01:13.961 [info] > git diff --name-status -z --diff-filter=ADMR 5c4aa68fa53a6c4bc4c692f836e25811b457f767...refs/remotes/origin/master [2ms]
+2025-03-21 15:01:13.996 [info] > git status -z -uall [19ms]
+2025-03-21 15:01:13.996 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2025-03-21 15:01:15.896 [info] > git blame --root --incremental 5c4aa68fa53a6c4bc4c692f836e25811b457f767 -- C-bot/sjf-non-premptive.c [3ms]
+2025-03-21 15:01:33.953 [info] > git config --get commit.template [19ms]
+2025-03-21 15:01:33.953 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2025-03-21 15:01:33.989 [info] > git status -z -uall [18ms]
+2025-03-21 15:01:33.990 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
