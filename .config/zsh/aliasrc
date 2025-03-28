@@ -1,4 +1,5 @@
 #!/bin/sh
+alias astop="pkill android-studio"
 alias ls="ls --color=auto"
 alias poweroof="poweroff"
 alias rebut="cat .config/zsh/jadu2.txt"

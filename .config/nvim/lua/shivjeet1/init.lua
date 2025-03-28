@@ -1,2 +1,15 @@
 require("shivjeet1.remap")
-print("heloformshivjeet1")
+require("shivjeet1.plugins")
+require("shivjeet1.packer")
+require("shivjeet1.set")
+require("shivjeet1.autopairs")
+require("shivjeet1.alpha")
+require("shivjeet1.indentline")
+require("shivjeet1.colorscheme")
+require("shivjeet1.cmp")
+require("shivjeet1.bufferline")
+require("shivjeet1.lualine")
+require("shivjeet1.toggleterm")
+
+
+--print("heloformshivjeet1")
