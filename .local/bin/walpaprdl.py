@@ -1,3 +1,6 @@
+#!/bin/sh
+#/home/shiv/.local/bin/req/bin/python /home/shiv/.local/bin/walpaprdl.py "$@"
+#source /home/shiv/.local/bin/req/bin/activate
 import requests
 import string
 import os
@@ -25,7 +28,7 @@ def downld_wallpaper(url):
     res = requests.get(url)
     wall_name = generaterid()
     ext = os.path.splitext(url)[1]
-    dwl_path = f"/home/shiv/Shiv/wallpapers/{wall_name}{ext}"
+    dwl_path = f"/home/shiv/Pictures/wallpapers/{wall_name}{ext}"
     open(dwl_path, 'wb').write(res.content)
 
 
