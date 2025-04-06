@@ -1,6 +1,4 @@
 #!/bin/sh
-#/home/shiv/.local/bin/req/bin/python /home/shiv/.local/bin/walpaprdl.py "$@"
-#source /home/shiv/.local/bin/req/bin/activate
 import requests
 import string
 import os
