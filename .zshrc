@@ -33,10 +33,10 @@ function precmd () {
 [ -f "$HOME/.config/zsh/aliasrc" ] && source "$HOME/.config/zsh/aliasrc"
 
 #to make del key work on st terminal
-#function zle-line-init () { echoti smkx }
-#function zle-line-finish () { echoti rmkx }
-#zle -N zle-line-init
-#zle -N zle-line-finish
+function zle-line-init () { echoti smkx }
+function zle-line-finish () { echoti rmkx }
+zle -N zle-line-init
+zle -N zle-line-finish
 
 #syntax hightlighting 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
