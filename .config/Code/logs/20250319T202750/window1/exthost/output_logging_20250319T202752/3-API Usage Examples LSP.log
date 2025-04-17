@@ -1,5 +1,0 @@
-Logger Init
-Initialization complete.
-Loaded supported calls (Version 1.5)
-Batch of 34 Total time: 511ms (Avg. Per Call: 15ms)
-Gaia Unable to Retrieve Batch Full Call Summary for easyocr.Reader(),super(),#super#.__init__(),cv2.imread(),cv2.cvtColor(),cv2.equalizeHist(),PIL.Image.fromarray(),easyocr.Reader.readtext(),numpy.array(),#str#.join(),PySide6.QtWidgets.QHBoxLayout(),PySide6.QtWidgets.QVBoxLayout(),PySide6.QtWidgets.QLabel(),PySide6.QtWidgets.QPushButton(),PySide6.QtWidgets.QTextEdit(),PySide6.QtWidgets.QComboBox(),signal.signal(),print(),PySide6.QtWidgets.QFileDialog.getOpenFileName(),PySide6.QtWidgets.QFileDialog.getSaveFileName(),open(),#open#.write(),docx.Document(),docx.Document.add_paragraph(),docx.Document.save(),fpdf.FPDF(),fpdf.FPDF.add_page(),fpdf.FPDF.set_font(),fpdf.FPDF.multi_cell(),fpdf.FPDF.output(),PySide6.QtWidgets.QApplication.instance(),PySide6.QtWidgets.QApplication(),sys.exit(),PySide6.QtWidgets.QApplication.exec(). (502)
