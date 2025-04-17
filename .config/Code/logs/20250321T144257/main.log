@@ -1,5 +1,0 @@
-2025-03-21 14:42:58.086 [info] update#setState idle
-2025-03-21 14:43:28.052 [info] update#setState checking for updates
-2025-03-21 14:43:29.522 [info] update#setState idle
-2025-03-21 14:44:46.406 [info] Extension host with pid 73030 exited with code: 0, signal: unknown.
-2025-03-21 14:44:46.497 [error] [UtilityProcess id: 1, type: fileWatcher, pid: 73041]: crashed with code 15 and reason 'killed'
