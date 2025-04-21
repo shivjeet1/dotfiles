@@ -2,7 +2,6 @@
 alias astop="pkill android-studio"
 alias ls="ls --color=auto"
 alias poweroof="poweroff"
-alias rebut="cat .config/zsh/jadu2.txt"
 alias getwal="source /home/shiv/.local/bin/req/bin/activate && python .local/bin/walpaprdl.py"
 alias setwall="./.local/bin/setwall"
 alias s-shot="./.local/bin/screencapture"
