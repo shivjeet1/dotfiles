@@ -162,7 +162,7 @@
     "format-icons": {
     "headphone": " ",
     "format-muted": " ",
-    "default": [" ", " "]
+    "default": ["", ""]
     },
 
     "on-click": "bash ~/.config/hypr/scripts/actioncenter.sh &  eww close calendar",
