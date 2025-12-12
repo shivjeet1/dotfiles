@@ -1,29 +1,29 @@
+/*theme.css: PYWAL COLOR MAPPING*/
+@import "/home/shiv/.cache/wal/colors-waybar.css";
 
-/* Base border color*/
-@define-color border-main @fg-main;
-@define-color border-alt @fg-main;
+@define-color bg-main @background;
+@define-color fg-main @foreground;
+@define-color bg-second @color8;
+@define-color bg-third @color0;
+@define-color bg-hover @color3;
+@define-color accent-main @color4;
+@define-color accent-alt @color5;
+@define-color warning-color @color1;
+@define-color border-main @color13;
+@define-color border-secondary @color10;
+@define-color shadow-main @color2;
 
-/* Background Colors */
-@define-color bg-main #11111B;
-@define-color bg-alt #939CDA;
-@define-color bg-hover #484872;
-@define-color bg-hover-alt #30304D;
-@define-color bg-tooltip @bg-main;
-@define-color bg-second #33334C;
-@define-color bg-third #939CDA;
-@define-color sway-bg @bg-main;
+/* Text and Tooltip Colors */
+@define-color fg-unactive @color7;
+@define-color bg-tooltip @background;
+@define-color border-alt @color4;
+@define-color content-act @color9;
 
-/*text color for entries, views and content in general */
-@define-color fg-main #B4BEFE;
-@define-color fg-unactive @bg-hover;
-@define-color content-act #CDD4FF;
-
-
-/* Player colors */
-@define-color ply-main #25253B;
-@define-color ply-hover #363657;
-@define-color ply-act #515181;
-@define-color msc-act #424268;
+/* Player Colors */
+@define-color ply-main @color12;
+@define-color ply-hover @color6;
+@define-color ply-act @color14;
+@define-color msc-act @color15;
 
 /* Wlogout */
 
