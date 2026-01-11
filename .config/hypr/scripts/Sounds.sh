@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
-# This script is used to play system sounds.
 
 theme="freedesktop" # Set the theme for the system sounds.
 mute=false          # Set to true to mute the system sounds.
