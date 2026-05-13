@@ -216,7 +216,7 @@ menu>*:active {
 }
 
 #mpris.paused {
-    color: @color0;
+    color: @color7;
 }
 
 /* Hover effect for bar elements */
