@@ -53,8 +53,8 @@ keymap("v", "<A-j>", ":m .+1<CR>==", opts)
 keymap("v", "<A-k>", ":m .-2<CR>==", opts)
 keymap("v", "p", '"_dP', opts)
 
--- Visual Block 
--- Move text up and down 
+-- Visual Block --
+-- Move text up and down
 keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
@@ -70,7 +70,7 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 -- Telescope 
 --keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
 keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
-keymap("n", "<c-f>", "<cmd>Telescope live_grep<cr>", opts)
+keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 
 -- Nvimtree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
@@ -81,4 +81,13 @@ keymap("n", "<leader>t", ":ToggleTerm<cr>",  opts)
 -- BufferLine
 keymap("n", "<leader>x", ":BufferLinePickClose<cr>",  opts)
 
+-- To toggle realativenumber
+function relativeToggle()
+  if vim.o.relativenumber then -- To access its stored value. OPT, :get() is used with vim.opt
+    vim.opt.relativenumber = false
+  else
+    vim.opt.relativenumber = true
+  end
+end
 
+keymap("n", "<leader>r", "<cmd>lua relativeToggle()<cr>",  opts)
