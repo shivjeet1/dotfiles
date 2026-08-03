@@ -175,11 +175,9 @@ hl.animation({ leaf = "workspaces", enabled = true, speed = 5, bezier = "default
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 hl.bind(mainMod .. " + SHIFT + Q", hl.dsp.exit())
 
-hl.bind(mainMod .. " + F", function()
-    hl.dispatch(hl.dsp.window.float({ action = "toggle" }))
-    hl.dispatch(hl.dsp.window.resize({ 945, 501, exact = true }))
-    hl.dispatch(hl.dsp.window.center())
-end)
+hl.bind(mainMod .. " + F", hl.dsp.window.float({ action = "toggle" }))
+hl.bind(mainMod .. " + F", hl.dsp.window.resize({ x = 945, y = 501 }))
+hl.bind(mainMod .. " + F", hl.dsp.window.center())
 
 hl.bind(mainMod .. " + slash", function() hl.exec_cmd(menu) end)
 hl.bind(mainMod .. " + SHIFT + Return", function() hl.exec_cmd(terminal) end)
