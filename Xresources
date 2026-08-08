@@ -1,0 +1,44 @@
+! --- 1. Pywal Dynamic Colors ---
+#include ".cache/wal/colors.Xresources"
+
+! --- 2. URxvt Core Setup ---
+URxvt.font:             xft:JetBrains Mono:pixelsize=16:antialias=true:hinting=true:hintstyle=hintslight:rgba=rgb
+URxvt.boldFont:         xft:JetBrains Mono:pixelsize=16:antialias=true:hinting=true:hintstyle=hintslight:rgba=rgb
+URxvt.cursorColor:      #bbbbbb
+URxvt.secondaryScroll:  true
+URxvt.scrollBar:        false
+
+URxvt.depth:            24
+URxvt.transparent:      true
+URxvt.shading:          20
+
+! Override Pywals background to force pure black transparency
+URxvt.background:       #000000
+
+URxvt.urlLauncher: firefox
+
+
+! --- Activate Perl Extensions ---
+URxvt.perl-ext-common: default,selection-to-clipboard,font-size,matcher
+
+! Left-click to open URLs
+URxvt.matcher.button: 1
+
+! --- Clipboard (Copy: Ctrl+Shift+C | Paste: Ctrl+Shift+P & V) ---
+URxvt.keysym.C-S-C:    eval:selection_to_clipboard
+URxvt.keysym.C-S-P:    eval:paste_clipboard
+URxvt.keysym.C-S-V:    eval:paste_clipboard
+
+! --- Font Resizing (Ctrl+Shift++ and Ctrl+Shift+-) ---
+URxvt.keysym.C-plus:    font-size:increase
+URxvt.keysym.C-minus:   font-size:decrease
+
+! Window padding
+!URxvt.internalBorder: 24
+
+! --- Xft Font Rendering ---
+Xft.antialias: 1
+Xft.hinting: 1
+Xft.hintstyle: hintslight
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault
