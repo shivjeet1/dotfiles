@@ -1,305 +1,132 @@
-// ====================== Main ======================
-
 {
     "layer": "top",
     "position": "top",
     "mod": "dock",
     "exclusive": true,
     "gtk-layer-shell": true,
-    "margin-top": 6, "margin-bottom": 0,
+    "margin-top": 6,
+    "margin-bottom": 0,
+    "margin-left": 10,
+    "margin-right": 10,
     "passthrough": false,
-    "height": 0,
+    "height": 36,
 
     "modules-left": ["group/leftSide"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["tray", "group/rightSide", "custom/swaync"],
-  
-    "hyprland/language": {
-        "format": "{}",
-        "format-en": "ENG",
-        "format-tr": "TR"
-},
+    "modules-right": ["group/controlCenter", "custom/swaync"],
 
-
-
-"custom/search": {
-    
-    "format": " ",
-    "tooltip": false,
-    
-    "on-click": "~/.config/hypr/scripts/rofilaunch.sh --drun",
-},
-
-  "custom/runner": {
-
-    "format": " ",
-    "tooltip": false,
-    
-    "on-click": "~/.config/hypr/scripts/rofilaunch.sh --system_menu"
-},
-
-"custom/os_button": {
-    "format": "",
-    "on-click": "rofi -show drun",
-    "tooltip": false
-  },
-
-// ============================================================
-
-
-
-
-// ====================== Media ======================
-
-"mpris": {
-    
-    "format": "{status_icon}",
-    
-    "player-icons": {
-      "default": "▶  Playing"},
-
-    "status-icons": {
-      "paused": "  Paused",
-      "playing": "  Playing",
-      "stopped": " Stopped",
+    "custom/os_button": {
+        "format": "",
+        "tooltip": false
     },
 
-    "tooltip": false
-},
+    "memory": {
+        "format": "󰍛 {}%",
+        "interval": 5
+    },
 
-// ===================================================
+    "cpu": {
+        "format": "󰻠 {usage}%",
+        "interval": 5
+    },
 
+    "group/leftSide": {
+        "orientation": "horizontal",
+        "modules": [
+            "custom/os_button",
+            "memory",
+            "cpu"
+        ]
+    },
 
-
-
-// ====================== Wireless ======================
-
- "bluetooth": {
-
-    "format": "",
-    "format-connected": " {device_alias}",
-    "format-connected-battery": " {device_alias} {device_battery_percentage}%",
-
-    "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
-    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
-    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
-    "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
-
-    "on-click": "blueman"
-},
-
-// ======================================================
-
-
-
-
-// ====================== System ======================
-  
-"power-profiles-daemon": {
-    
-    "format": "{icon}",
-    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
-    "tooltip": true,
-    "format-icons": {
-        "default": " ",
-        "performance": " ",
-        "balanced": "☯ ",
-        "power-saver": " "
+    "pulseaudio": {
+        "max-volume": 120,
+        "scroll-step": 10,
+        "format": "{icon} {volume}%",
+        "format-muted": " ",
+        "tooltip-format": "{icon}  {volume}%",
+        "format-icons": {
+            "headphone": " ",
+            "default": ["", ""]
         }
     },
 
-"battery": {
-
-    "on-click": "bash ~/.config/hypr/scripts/actioncenter.sh &  eww close calendar",
-
-    "states": {"good": 95, "warning": 30, "critical": 20},
-    
-    "format": "{icon}{capacity}%",
-    "format-charging": "{capacity}%",
-    "format-plugged": "{capacity}%",
-    "format-alt": "{time} {icon} {capacity}%",
-
-    "format-alt-icons": [
-        "󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
-    "format-icons": [" ", " ", " ", " ", " "]
-},
-
-"pulseaudio": {
-    "max-volume": 120,
-    "scroll-step": 10,
-    
-    "format": "{icon} {volume}%",
-    "tooltip-format": "{icon}  {volume}%",
-    
-    "format-icons": {
-    "headphone": " ",
-    "format-muted": " ",
-    "default": ["", ""]
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{icon}{capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-icons": [" ", " ", " ", " ", " "]
     },
 
-    "on-click": "bash ~/.config/hypr/scripts/actioncenter.sh &  eww close calendar",
-    "menu": "on-click-right",
-    "menu-file": "~/.config/waybar/volume_menu.xml",
-	"menu-actions": {
-		"ToggleSound": "pamixer -t&",
-		"pavu": "nohup foot --override=colors.alpha=1 --app-:id=Wiremix -e wiremix >/dev/null 2>&1 &",
-	},
-},
-
-
-"backlight": {
-    
-    "device": "intel_backlight",
-
-    "format": "{icon}",
-    "tooltip-format": "{icon} {percent}%",
-    "format-icons": [" ", " ", " ", " ", " ", " ", " ", " ", " "],
-    
-    "on-click": "bash ~/.config/hypr/scripts/actioncenter.sh &  eww close calendar"
-},
-
-// ========================================================
-
-
-
-
-// ====================== Notification ======================
-
-"custom/swaync": {
-    "tooltip": false,
-    
-    "format": "{icon}",
-    "format-icons": {
-        "notification": "<span foreground='#7b82c6'><sup></sup></span>",
-        "none": "",
-        "dnd-notification": "<span foreground='red'><sup></sup></span>",
-        "dnd-none": "",
-        "inhibited-notification": "<span foreground='red'><sup></sup></span>",
-        "inhibited-none": "",
-        "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
-        "dnd-inhibited-none": ""
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon}",
+        "tooltip-format": "{icon} {percent}%",
+        "format-icons": [" ", " ", " ", " ", " ", " ", " ", " ", " "]
     },
 
-    "return-type": "json",
-    "exec-if": "which swaync-client",
-    "exec": "swaync-client -swb",
-    
-    "on-click": "swaync-client -t -sw & eww close actioncenter calendar musiccenter",
-    "on-click-right": "swaync-client -d -sw",
-    "escape": true
-},
-
-// ==========================================================
-
-
-
-
-// ====================== Workspaces ======================
-
-"hyprland/workspaces": {
-    
-    "format":"{icon}",
-    "icon-size": 32,
-    "spacing": 16,
-    
-    "on-scroll-up": "hyprctl dispatch workspace r+1",
-    "on-scroll-down": "hyprctl dispatch workspace r-1",
-    
-    "persistent-workspaces": { "*": 0 },
-    "format-icons": {
-        //"1": "一",
-        //"2": "二",
-        //"3": "三",
-        //"4": "四",
-        //"5": "五",
-        "urgent": "",
-        // "active": "",
-        // "default": "󰧞",
-        "sort-by-number": true
+    "power-profiles-daemon": {
+        "format": "{icon}",
+        "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+        "tooltip": true,
+        "format-icons": {
+            "default": "",
+            "performance": "",
+            "balanced": "☯",
+            "power-saver": " "
+        }
     },
 
-},
+    "clock": {
+        "format": " {:%H:%M}",
+        "tooltip-format": " {:%d %B %Y}"
+    },
 
-// ========================================================
+    "group/controlCenter": {
+        "orientation": "horizontal",
+        "modules": [
+            "pulseaudio",
+            "battery",
+            "backlight",
+            "power-profiles-daemon",
+            "clock"
+        ]
+    },
 
+    "custom/swaync": {
+        "tooltip": false,
+        "format": "{icon}",
+        "format-icons": {
+            "notification": "<span foreground='#7b82c6'><sup></sup></span>",
+            "none": "",
+            "dnd-notification": "<span foreground='red'><sup></sup></span>",
+            "dnd-none": "",
+            "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+            "inhibited-none": "",
+            "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+            "dnd-inhibited-none": ""
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb 2>/dev/null",
+        "on-click": "swaync-client -t -sw 2>/dev/null",
+        "on-click-right": "swaync-client -d -sw 2>/dev/null",
+        "escape": true
+    },
 
-// ====================== Taskbar ======================
-
-    "wlr/taskbar": {
-    "format": "{icon} {title:.18}",
-    "icon-size": 18,
-    "spacing": 3,
-    "on-click-middle": "close",
-    "tooltip-format": "{title}",
-    "ignore-list": [],
-    "on-click": "activate"
-  },
-
-// =====================================================
-
-
-
-
-// ====================== Utilities ======================
-
-"tray": {
-    "icon-size": 18,
-    "spacing": 8
-},
-
-"clock": {
-    "format": " {:%R}",
-    "tooltip-format": " {:%d %B %Y}",
-    "on-click": "eww open calendar --toggle --no-daemonize & eww close actioncenter musiccenter",
-  },
-
-"memory": {
-    "format": "󰍛 {}%",
-    "format-alt": "󰍛 {used}/{total} GiB",
-    "interval": 5
-  },
-
-  "cpu": {
-    "format": "󰻠 {usage}%",
-    "format-alt": "󰻠 {avg_frequency} GHz",
-    "interval": 5
-  },
-
-// =======================================================
-
-
-
-
-
-// ====================== Groups ======================
-
-"group/hardware": {
-	"orientation": "horizontal",
-	"modules": ["memory", "cpu"]
-	},
-
-"group/controlCenter": {
-	"orientation": "horizontal",
-	"modules": [
-			"pulseaudio",
-			"battery",
-            "backlight"
-		]
-},
-    
-"group/leftSide": {
-	"orientation": "horizontal",
-	"modules": [
-            "custom/os_button",
-            "mpris",
-            "group/hardware"
-            ]
-},
-
-"group/rightSide": {
-	"orientation": "horizontal",
-	"modules": ["group/controlCenter","power-profiles-daemon", "clock"]
-	},
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "on-scroll-up": "hyprctl dispatch workspace r+1",
+        "on-scroll-down": "hyprctl dispatch workspace r-1",
+        "persistent-workspaces": {
+            "*": 0
+        },
+        "disable-scroll": false,
+        "all-outputs": true
+    }
 }
-
-// ====================================================
