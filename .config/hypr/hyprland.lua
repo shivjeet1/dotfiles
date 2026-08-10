@@ -51,14 +51,15 @@ hl.monitor({
 local terminal = "kitty"
 local editor = "kitty nvim"
 local menu = "wofi --show drun"
-local killbar = "killall waybar; waybar"
+local killbar = "killall waybar; waybar &"
 local mainMod = "SUPER"
+local screenshot = "grims"
 
 --------------------------------------------------
 -- AUTOSTART
 --------------------------------------------------
 hl.on("hyprland.start", function()
-    hl.exec_cmd("nm-applet")
+    hl.exec_cmd("swaync")
     hl.exec_cmd("hypridle")
     hl.exec_cmd("waybar")
     hl.exec_cmd("sleep 1; cava.sh")
@@ -173,7 +174,7 @@ end
 hl.bind(mainMod .. " + j", function() hl.dispatch(hl.dsp.window.cycle_next()) end)
 hl.bind(mainMod .. " + k", function() hl.dispatch(hl.dsp.window.cycle_next({ prev = true })) end)
 -- Special workspace (scratchpad)
-hl.bind(mainMod .. " + SHIFT + S", function() hl.dispatch(hl.dsp.workspace.toggle_special("magic")) end)
+hl.bind(mainMod .. " + S", function() hl.dispatch(hl.dsp.workspace.toggle_special("magic")) end)
 -- Lock screen
 hl.bind("ALT + SHIFT + L", function() hl.exec_cmd("hyprlock") end)
 -- Scroll through workspaces with mainMod + scroll
@@ -183,7 +184,7 @@ hl.bind(mainMod .. " + mouse_up", function() hl.dispatch(hl.dsp.focus({ workspac
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
 hl.bind(mainMod .. " + mouse:273", hl.dsp.window.drag({ resize = true }), { mouse = true })
 -- Screenshots
-hl.bind("Print", function() hl.exec_cmd('grim -g "$(slurp)" ~/Pictures/ss/"$(date +%Y%m%d-%H%M%S).png"') end)
+hl.bind(mainMod .. " + SHIFT + S", function() hl.exec_cmd(screenshot) end)
 
 local layout_cycle = { "dwindle", "master", "scrolling", "monocle" }
 
@@ -255,8 +256,8 @@ hl.bind("XF86AudioRaiseVolume", function() hl.exec_cmd("wpctl set-volume @DEFAUL
 hl.bind("XF86AudioLowerVolume", function() hl.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-") end, { repeating = true, locked = true })
 hl.bind("XF86AudioMute", function() hl.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle") end, { locked = true })
 hl.bind("XF86AudioMicMute", function() hl.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle") end, { locked = true })
-hl.bind("XF86MonBrightnessUp", function() hl.exec_cmd("brightnessctl s 5%+") end, { repeating = true, locked = true })
-hl.bind("XF86MonBrightnessDown", function() hl.exec_cmd("brightnessctl s 5%-") end, { repeating = true, locked = true })
+hl.bind("XF86MonBrightnessUp", function() hl.exec_cmd("brightnessctl s 1%+") end, { repeating = true, locked = true })
+hl.bind("XF86MonBrightnessDown", function() hl.exec_cmd("brightnessctl s 1%-") end, { repeating = true, locked = true })
 
 --------------------------------------------------
 -- WINDOW & WORKSPACE RULES
