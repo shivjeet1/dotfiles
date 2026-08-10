@@ -10,5 +10,4 @@ halign=fill
 orientation=vertical
 content_halign=fill
 label_wrap=off
-hide_scroll=true # Hides the bulky scrollbar for a cleaner edge
-# allow_images=false # Uncomment this if you want to remove icons entirely
+hide_scroll=true
