@@ -19,7 +19,6 @@ zstyle ':completion:*' menu select
 bindkey -e
 bindkey ";5C" forward-word
 bindkey ";5D" backward-word
-bindkey "~" delete-char
 
 function precmd () {
     print -Pn -- '\e]2;%n@%m %~\a'
@@ -57,6 +56,8 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=160'
 
-clear
-xrdb -merge /home/shiv/Xresources
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+
+# Added by Antigravity CLI installer
+export PATH="/home/shiv/.local/bin:$PATH"
