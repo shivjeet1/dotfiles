@@ -1,5 +1,4 @@
 -- ### SHIVJEET1's HYPR CONFIG (v0.55+ Lua Version) ###
--- Combined single-file configuration adapted from impossibleclone/hypr
 
 --------------------------------------------------
 -- DYNAMIC PYWAL COLOR PARSER
@@ -40,8 +39,8 @@ hl.monitor({
     output = "eDP-1",
     mode = "highres@highrr",
     position = "0x0",
-    scale = "1",
-    bitdepth = 10,
+    scale = "1.25",
+    bitdepth = 8,
 })
 
 hl.monitor({
@@ -73,7 +72,7 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("sleep 1; cava.sh")
     hl.exec_cmd("hyprpaper")
     hl.exec_cmd("wal -R")
-    hl.exec_cmd("systemctl --user start plasma-polkit-agent")
+    hl.exec_cmd("systemctl --user start hyprpolkitagent")
     hl.exec_cmd("hyprpm reload")
 end)
 
@@ -303,11 +302,14 @@ hl.layer_rule({
     name = "wofi-blur",
     match = { namespace = "wofi" },
     blur = true,
+    animation = "slide top",
     ignore_alpha = 0.5, 
 })
 
 hl.layer_rule({ 
+    name = "rofi-blur",
     match = { namespace = "rofi" }, 
     blur = true, 
     ignore_alpha = 0.5, 
+    animation = "fade",
 })

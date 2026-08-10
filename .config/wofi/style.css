@@ -1,57 +1,63 @@
-/* configuration { */
-/*     // modi:                       "drun,run,window,ssh,keys,combi,filebrowser,recursivebrowser"; */
-/*     show-icons:                 true; */
-/*     // display-drun:               "  "; */
-/*     display-drun:               " "; */
-/*     font:                       "FiraCode Nerd Font 12"; */
-/* } */
-@theme "/dev/null"
-@import "~/.cache/wal/colors-rofi-dark.rasi"
+@import url("../../.cache/wal/colors-rofi-dark.rasi")
+
 * {
-    rad:                         0px;
-    background-color:            transparent;
-    text-color:                  @foreground;
+    border: none;
+    box-shadow: none;
 }
-window {
-    border-radius:               8px;
-    width:                       30%;
-    border:                      2px solid;
-    border-color:                @color7;
-    background-color:            @background;
+
+window, #window {
+    background-color: @fff; 
+    background: @fff;
+    margin: 0px;
 }
-mainbox {
-    children:                    [ "inputbar", "listview" ];
+
+#outer-box {
+    margin: 5px; 
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.65); 
+    border: 2px solid rgba(255, 255, 255, 0.3); 
+    border-radius: 16px;
 }
-inputbar {
-    children:                    [ "prompt", "entry" ];
-    background-color:            @alternate-normal-background;
-    padding:                     15px;
-    border:                      0 0 2px 0;
-    border-color:                @color8;
+
+#inner-box, #scroll {
+    background-color: rgba(0, 0, 0, 0); 
 }
-prompt {
-    text-color:                  @color7;
-    font-weight:                 bold;
+
+#input {
+    margin: 5px 5px 15px 5px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: @foreground;
+    padding: 10px;
+    border-radius: 12px;
 }
-listview {
-    lines:                       8;
-    padding:                     10px;
-    spacing:                     4px;
-    fixed-height:                true;
+
+#input:focus {
+    border: 1px solid @color7;
+    outline: none;
 }
-element {
-    padding:                     8px 12px;
-    border-radius:               6px;
+
+#text {
+    margin: 5px;
+    color: @foreground;
 }
-element selected {
-    border:                      2px solid @color1;
-    background-color:            @selected-normal-background;
-    text-color:                  @selected-normal-foreground;
+
+#entry {
+    padding: 8px;
+    margin: 2px 5px;
+    background-color: transparent;
+    border-radius: 12px;
+    border: 1px solid transparent;
 }
-element-icon {
-    size:                        24px;
-    margin:                      0 12px 0 0;
+
+#entry:selected, #entry:focus {
+    background-color: @color2; 
+    border: 1px solid @color7; 
+    border-radius: 12px;
+    outline: none;
 }
-element-text {
-    vertical-align:              0.5;
+
+#entry:selected #text, #entry:focus #text {
+    color: @color10;
+    font-weight: bold;
 }
