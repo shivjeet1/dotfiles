@@ -14,7 +14,7 @@ window#waybar {
 
 tooltip {
     background: #000000;
-    border-radius: 5px;
+    border-radius: 8px; /* Squircle */
     border: 1px solid @color15;
 }
 
@@ -28,7 +28,7 @@ tooltip label {
 #leftSide, #controlCenter, #custom-swaync, #workspaces {
     background-color: #000000;
     border: 2px solid @color15;
-    border-radius: 16px;
+    border-radius: 8px; /* Squircle container radius */
     margin: 0px 6px;
 }
 
@@ -48,14 +48,13 @@ tooltip label {
     color: #000000;
 }
 
-/* Edge-rounding for group endpoints to prevent hover bleed */
-#custom-os_button { border-radius: 14px 0px 0px 14px; }
-#cpu { border-radius: 0px 14px 14px 0px; }
+/* Edge-rounding for group endpoints to prevent hover bleed 
+   Inner radius (6px) nests cleanly inside the outer radius (8px) */
+#custom-os_button { border-radius: 6px 0px 0px 6px; }
+#cpu { border-radius: 0px 6px 6px 0px; }
 
-#pulseaudio { border-radius: 14px 0px 0px 14px; }
-#clock { border-radius: 0px 14px 14px 0px; }
-
-#custom-swaync { border-radius: 14px; }
+#pulseaudio { border-radius: 6px 0px 0px 6px; }
+#clock { border-radius: 0px 6px 6px 0px; }
 
 /* ================================
    WORKSPACES (Center Animated)
@@ -68,7 +67,7 @@ tooltip label {
     color: @color15; 
     padding: 0px 10px;
     margin: 2px;
-    border-radius: 12px;
+    border-radius: 6px; /* Squircle workspace buttons */
     min-width: 24px;
     transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -86,7 +85,7 @@ tooltip label {
     box-shadow: 0px 0px 6px @color14;
 }
 
-/* Keyframe to smoothly transition the pill expansion */
+/* Keyframe to smoothly transition the squircle expansion */
 @keyframes active-workspace-pop {
     0% {
         min-width: 24px;
