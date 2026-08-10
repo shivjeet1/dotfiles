@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Define the output file
+OUTPUT_FILE="installed_packages.txt"
+
+echo "Fetching manually installed packages..."
+
+# Query pacman for explicitly installed native packages
+pacman -Qenq > "$OUTPUT_FILE"
+
+echo "Done! Found $(wc -l < "$OUTPUT_FILE") packages."
+echo "The list has been saved to $OUTPUT_FILE."
