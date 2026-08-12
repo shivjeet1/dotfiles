@@ -1,0 +1,35 @@
+#!/bin/sh
+
+
+LAST_RUN_FILE="/tmp/brightness_last_run"
+NOW=$(date +%s%3N) # Get current time in milliseconds
+
+
+if [ -f "$LAST_RUN_FILE" ]; then
+    LAST_RUN=$(cat "$LAST_RUN_FILE")
+else
+    LAST_RUN=0
+fi
+
+
+echo "$NOW" > "$LAST_RUN_FILE"
+
+
+DIFF=$((NOW - LAST_RUN))
+
+
+if [ "$DIFF" -lt 150 ]; then
+    STEP=5
+    SPEED=200000 # 200ms smooth fade for large jumps
+else
+    # It was a single tap
+    STEP=1
+    SPEED=50000  # 50ms fast fade for micro steps
+fi
+
+
+if [ "$1" == "up" ]; then
+    brillo -q -A $STEP -u $SPEED
+elif [ "$1" == "down" ]; then
+    brillo -q -U $STEP -u $SPEED
+fi
