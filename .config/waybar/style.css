@@ -14,7 +14,7 @@ window#waybar {
 
 tooltip {
     background: #000000;
-    border-radius: 8px; /* Squircle */
+    border-radius: 8px;
     border: 1px solid @color15;
 }
 
@@ -22,43 +22,31 @@ tooltip label {
     color: @foreground;
 }
 
-/* ================================
-   GROUP CONTAINERS
-   ================================ */
 #leftSide, #controlCenter, #custom-swaync, #workspaces {
     background-color: #000000;
     border: 2px solid @color15;
-    border-radius: 8px; /* Squircle container radius */
+    border-radius: 8px; 
     margin: 0px 6px;
 }
 
-/* ================================
-   MODULE STYLING & ANIMATIONS
-   ================================ */
 #custom-os_button, #memory, #cpu, 
 #pulseaudio, #battery, #backlight, #power-profiles-daemon, #clock, #custom-swaync {
     padding: 0px 12px;
     transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-/* Hover effect */
 #custom-os_button:hover, #memory:hover, #cpu:hover, 
 #pulseaudio:hover, #battery:hover, #backlight:hover, #power-profiles-daemon:hover, #clock:hover, #custom-swaync:hover {
     background-color: @color14;
     color: #000000;
 }
 
-/* Edge-rounding for group endpoints to prevent hover bleed 
-   Inner radius (6px) nests cleanly inside the outer radius (8px) */
 #custom-os_button { border-radius: 6px 0px 0px 6px; }
 #cpu { border-radius: 0px 6px 6px 0px; }
 
 #pulseaudio { border-radius: 6px 0px 0px 6px; }
 #clock { border-radius: 0px 6px 6px 0px; }
 
-/* ================================
-   WORKSPACES (Center Animated)
-   ================================ */
 #workspaces {
     padding: 2px 4px;
 }
