@@ -232,8 +232,8 @@ hl.bind("XF86AudioRaiseVolume", function() hl.exec_cmd("wpctl set-volume -l 1.25
 hl.bind("XF86AudioLowerVolume", function() hl.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-") end, { repeating = true, locked = true })
 hl.bind("XF86AudioMute", function() hl.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle") end, { locked = true })
 hl.bind("XF86AudioMicMute", function() hl.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle") end, { locked = true })
-hl.bind("XF86MonBrightnessUp", function() hl.exec_cmd("brillo -A 1 -u 150000") end, { repeating = true, locked = false })
-hl.bind("XF86MonBrightnessDown", function() hl.exec_cmd("brillo -U 1 -u 150000") end, { repeating = true, locked = true })
+hl.bind("XF86MonBrightnessUp", function() hl.exec_cmd("brillo -A 5 -u 200000") end, { repeating = true, locked = false })
+hl.bind("XF86MonBrightnessDown", function() hl.exec_cmd("brillo -U 5 -u 200000") end, { repeating = true, locked = true })
 
 --------------------------------------------------
 -- WINDOW & WORKSPACE RULES
