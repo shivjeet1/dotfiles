@@ -43,7 +43,8 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("wal -R")
     hl.exec_cmd("systemctl --user start hyprpolkitagent")
     hl.exec_cmd("hyprpm reload")
-    hl.exec_cmd("kitty +kitten panel --edge=background --detach -o background_opacity=0.4 -o window_padding_width=2 cava")
+    hl.exec_cmd(
+    "kitty +kitten panel --edge=background --detach -o background_opacity=0.4 -o window_padding_width=2 cava")
 end)
 
 --------------------------------------------------
@@ -134,7 +135,8 @@ hl.bind(mainMod .. " + F", hl.dsp.window.center())
 hl.bind(mainMod .. " + slash", function() hl.exec_cmd(menu) end)
 hl.bind(mainMod .. " + SHIFT + Return", function() hl.exec_cmd(terminal) end)
 hl.bind(mainMod .. " + SHIFT + W", function() hl.exec_cmd(killbar) end)
-hl.bind(mainMod .. " + SHIFT + L", function() hl.dispatch(hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" })) end)
+hl.bind(mainMod .. " + SHIFT + L",
+    function() hl.dispatch(hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" })) end)
 
 hl.bind(mainMod .. " + left", function() hl.dispatch(hl.dsp.focus({ direction = "l" })) end)
 hl.bind(mainMod .. " + right", function() hl.dispatch(hl.dsp.focus({ direction = "r" })) end)
@@ -180,7 +182,7 @@ local function announce_layout(layout)
     })
 end
 
--- Layout-aware bind helper straight from the Hyprland wiki 
+-- Layout-aware bind helper straight from the Hyprland wiki
 local function layout_bind(bind_table)
     return function()
         local layout = current_layout()
@@ -228,12 +230,14 @@ hl.bind(mainMod .. " + SHIFT + K", layout_bind({
     monocle   = hl.dsp.layout("cycleprev"),
 }))
 
-hl.bind("XF86AudioRaiseVolume", function() hl.exec_cmd("wpctl set-volume -l 1.25 @DEFAULT_AUDIO_SINK@ 5%+") end, { repeating = true, locked = true })
-hl.bind("XF86AudioLowerVolume", function() hl.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-") end, { repeating = true, locked = true })
+hl.bind("XF86AudioRaiseVolume", function() hl.exec_cmd("wpctl set-volume -l 1.25 @DEFAULT_AUDIO_SINK@ 5%+") end,
+    { repeating = true, locked = true })
+hl.bind("XF86AudioLowerVolume", function() hl.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-") end,
+    { repeating = true, locked = true })
 hl.bind("XF86AudioMute", function() hl.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle") end, { locked = true })
 hl.bind("XF86AudioMicMute", function() hl.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle") end, { locked = true })
-hl.bind("XF86MonBrightnessUp", function() hl.exec_cmd("brillo -A 5 -u 200000") end, { repeating = true, locked = false })
-hl.bind("XF86MonBrightnessDown", function() hl.exec_cmd("brillo -U 5 -u 200000") end, { repeating = true, locked = true })
+hl.bind("XF86MonBrightnessUp", function() hl.exec_cmd("~/.local/bin/dynamic-bgtns up") end, { repeating = true, locked = true })
+hl.bind("XF86MonBrightnessDown", function() hl.exec_cmd("~/.local/bin/dynamic-bgtns down") end, { repeating = true, locked = true })
 
 --------------------------------------------------
 -- WINDOW & WORKSPACE RULES
@@ -290,5 +294,5 @@ hl.layer_rule({
     match = { namespace = "wofi" },
     blur = true,
     animation = "slide top",
-    ignore_alpha = 0.5, 
+    ignore_alpha = 0.5,
 })
