@@ -3,30 +3,7 @@
 --------------------------------------------------
 -- DYNAMIC PYWAL COLOR PARSER
 --------------------------------------------------
-local function get_pywal_colors()
-    local colors = {}
-    local pywal_path = os.getenv("HOME") .. "/.cache/wal/colors-hyprland.conf"
-    local file = io.open(pywal_path, "r")
-    assert(file, "pywal colors file not found: " .. pywal_path)
-    if file then
-        for line in file:lines() do
-            local key, val = line:match("%$(%w+)%s*=%s*(.-)%s*$")
-            if key and val then
-                val = val:gsub("#.*$", ""):match("^%s*(.-)%s*$")
-                if val:match("^#?%x%x%x%x%x%x$") then
-                    local hex = val:gsub("^#", "")
-                    val = "rgba(" .. hex .. "ff)"
-                elseif not (val:match("^rgb") or val:match("^rgba") or val:match("^0x")) then
-                    val = "rgba(" .. val .. "ff)"
-                end
-                colors[key] = val
-            end
-        end
-        file:close()
-    end
-    return colors
-end
-local colors = get_pywal_colors()
+local colors = require(os.getenv("HOME") .. "/.cache/wal/colors-hyprland")
 
 --------------------------------------------------
 -- MONITORS
@@ -49,7 +26,6 @@ hl.monitor({
 -- PROGRAM VARIABLES
 --------------------------------------------------
 local terminal = "kitty"
-local editor = "kitty nvim"
 local menu = "wofi --show drun"
 local killbar = "killall waybar; waybar &"
 local mainMod = "SUPER"
@@ -67,6 +43,7 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("wal -R")
     hl.exec_cmd("systemctl --user start hyprpolkitagent")
     hl.exec_cmd("hyprpm reload")
+    hl.exec_cmd("kitty +kitten panel --edge=background --detach -o background_opacity=0.4 -o window_padding_width=2 cava")
 end)
 
 --------------------------------------------------
@@ -181,8 +158,8 @@ hl.bind("ALT + SHIFT + L", function() hl.exec_cmd("hyprlock") end)
 hl.bind(mainMod .. " + mouse_down", function() hl.dispatch(hl.dsp.focus({ workspace = "e+1" })) end)
 hl.bind(mainMod .. " + mouse_up", function() hl.dispatch(hl.dsp.focus({ workspace = "e-1" })) end)
 -- Move/resize windows with mainMod + LMB/RMB and dragging
-hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
-hl.bind(mainMod .. " + mouse:273", hl.dsp.window.drag({ resize = true }), { mouse = true })
+hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag())
+hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize())
 -- Screenshots
 hl.bind(mainMod .. " + SHIFT + S", function() hl.exec_cmd(screenshot) end)
 
@@ -197,7 +174,7 @@ end
 local function announce_layout(layout)
     hl.notification.create({
         text = "Layout: " .. layout,
-        duration = 1300, -- ms (~1-1.5s)
+        duration = 1500,
         icon = "info",
         color = colors.color4 or "rgba(89b4faee)",
     })
@@ -227,7 +204,6 @@ hl.bind(mainMod .. " + SHIFT + F", function()
 end)
 
 -- dwindle = splitratio, master = mfact, scrolling = colresize.
--- Monocle windows are always maximized, so there's nothing to resize -
 hl.bind(mainMod .. " + h", layout_bind({
     dwindle   = hl.dsp.layout("splitratio -0.01"),
     master    = hl.dsp.layout("mfact -0.01"),
@@ -252,12 +228,12 @@ hl.bind(mainMod .. " + SHIFT + K", layout_bind({
     monocle   = hl.dsp.layout("cycleprev"),
 }))
 
-hl.bind("XF86AudioRaiseVolume", function() hl.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+") end, { repeating = true, locked = true })
+hl.bind("XF86AudioRaiseVolume", function() hl.exec_cmd("wpctl set-volume -l 1.25 @DEFAULT_AUDIO_SINK@ 5%+") end, { repeating = true, locked = true })
 hl.bind("XF86AudioLowerVolume", function() hl.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-") end, { repeating = true, locked = true })
 hl.bind("XF86AudioMute", function() hl.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle") end, { locked = true })
 hl.bind("XF86AudioMicMute", function() hl.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle") end, { locked = true })
-hl.bind("XF86MonBrightnessUp", function() hl.exec_cmd("brightnessctl s 1%+") end, { repeating = true, locked = true })
-hl.bind("XF86MonBrightnessDown", function() hl.exec_cmd("brightnessctl s 1%-") end, { repeating = true, locked = true })
+hl.bind("XF86MonBrightnessUp", function() hl.exec_cmd("brillo -A 1 -u 150000") end, { repeating = true, locked = false })
+hl.bind("XF86MonBrightnessDown", function() hl.exec_cmd("brillo -U 1 -u 150000") end, { repeating = true, locked = true })
 
 --------------------------------------------------
 -- WINDOW & WORKSPACE RULES
@@ -308,11 +284,6 @@ hl.window_rule({
     match = { class = "hyprland-run" },
     move = "20 monitor_h-120",
     float = true,
-})
-hl.window_rule({
-    name = "browser-fakefullscreen",
-    match = { class = "zen", float = false },
-    fullscreen_state = "0 2",
 })
 hl.layer_rule({
     name = "wofi-blur",

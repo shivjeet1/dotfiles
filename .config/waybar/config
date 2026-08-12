@@ -65,7 +65,7 @@
 
     "backlight": {
         "device": "intel_backlight",
-        "format": "{icon}",
+        "format": "{icon}{percent}%",
         "tooltip-format": "{icon} {percent}%",
         "format-icons": [" ", " ", " ", " ", " ", " ", " ", " ", " "]
     },

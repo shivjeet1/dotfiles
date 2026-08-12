@@ -1,4 +1,5 @@
 vim.opt.fillchars:append { eob = " " }
+vim.opt.autoread       = true
 vim.opt.clipboard      = 'unnamedplus'
 vim.opt.completeopt    = { 'menu', 'menuone', 'noselect' }
 vim.opt.ruler          = false

@@ -1,21 +1,15 @@
 #!/bin/sh
 alias astop="pkill android-studio"
+alias cam="mpv av://v4l2:/dev/video0 --demuxer-lavf-o=input_format=mjpeg,video_size=1920x1080,framerate=40 --profile=low-latency --vf=hflip"
 alias ls="ls --color=auto"
-alias poweroof="poweroff"
-alias rebut="cat .config/zsh/jadu2.txt"
 alias getwal="source /home/shiv/.local/bin/req/bin/activate && python .local/bin/walpaprdl.py"
 alias setwall="./.local/bin/setwall"
-alias s-shot="./.local/bin/screencapture"
-alias cam='mpv av://v4l2:/dev/video0 --profile=low-latency --untimed'
 alias grep="grep --color=auto"
 alias ip="ip -color=auto"
-alias redmi="nmcli dev wifi connect Redmi_12_5G"
-alias mi="nmcli dev wifi connect Mi_11X"
 alias BL="sleep 2 ;betterlockscreen -l blur"
 alias gpom="git push origin master"
 alias ftp-start='IP=$(ip a | grep -o "inet 192\.168\.[0-9.]*" | grep -o "[0-9.]*"); echo "Connect to http://$IP:8000"; python -m http.server 8000 --bind "$IP"'
 alias grims="./.local/bin/grims"
 alias mps="./.local/bin/mps"
-#alias sxiv="sxiv *.{jpg,png,jpeg}"
-####alias slock="systemctl suspend; slock"
 #alias ssot="sleep 2; grim -g "$(slurp)" Pictures/ss/$(date +%s).png"
+
