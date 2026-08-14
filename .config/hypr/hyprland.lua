@@ -43,8 +43,7 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("wal -R")
     hl.exec_cmd("systemctl --user start hyprpolkitagent")
     hl.exec_cmd("hyprpm reload")
-    hl.exec_cmd(
-    "kitty +kitten panel --edge=background --detach -o background_opacity=0.4 -o window_padding_width=2 cava")
+--  hl.exec_cmd("kitty +kitten panel --edge=background --detach -o background_opacity=0.4 -o window_padding_width=2 cava")
 end)
 
 --------------------------------------------------
