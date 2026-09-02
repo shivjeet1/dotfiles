@@ -1,0 +1,156 @@
+{
+    "layer": "top",
+    "position": "top",
+    "mod": "dock",
+    "exclusive": true,
+    "gtk-layer-shell": true,
+    "margin-top": 6,
+    "margin-bottom": 0,
+    "margin-left": 10,
+    "margin-right": 10,
+    "passthrough": false,
+    "height": 36,
+    "modules-left": [
+        "group/leftSide"
+    ],
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        "group/controlCenter",
+        "custom/swaync"
+    ],
+    "custom/os_button": {
+        "format": "",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "󰍛 {}%",
+        "interval": 5
+    },
+    "cpu": {
+        "format": "󰻠 {usage}%",
+        "interval": 5
+    },
+    "group/leftSide": {
+        "orientation": "horizontal",
+        "modules": [
+            "custom/os_button",
+            "memory",
+            "cpu"
+        ]
+    },
+    "pulseaudio": {
+        "max-volume": 120,
+        "scroll-step": 10,
+        "format": "{icon} {volume}%",
+        "format-muted": " ",
+        "tooltip-format": "{icon}  {volume}%",
+        "format-icons": {
+            "headphone": " ",
+            "default": [
+                "",
+                ""
+            ]
+        }
+    },
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{icon}{capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-icons": [
+            " ",
+            " ",
+            " ",
+            " ",
+            " "
+        ]
+    },
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon} {percent}%",
+        "tooltip-format": "{icon} {percent}%",
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+    },
+    "power-profiles-daemon": {
+        "format": "{icon}",
+        "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+        "tooltip": true,
+        "format-icons": {
+            "default": "",
+            "performance": "",
+            "balanced": "☯",
+            "power-saver": " "
+        }
+    },
+    "clock": {
+        "format": " {:%H:%M}",
+        "tooltip-format": " {:%d %B %Y}"
+    },
+    "group/controlCenter": {
+        "orientation": "horizontal",
+        "modules": [
+            "pulseaudio",
+            "battery",
+            "backlight",
+            "power-profiles-daemon",
+            "clock"
+        ]
+    },
+    "custom/swaync": {
+        "tooltip": false,
+        "format": "{icon}",
+        "format-icons": {
+            "notification": "<span foreground='#7b82c6'><sup></sup></span>",
+            "none": "",
+            "dnd-notification": "<span foreground='red'><sup></sup></span>",
+            "dnd-none": "",
+            "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+            "inhibited-none": "",
+            "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+            "dnd-inhibited-none": ""
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb 2>/dev/null",
+        "on-click": "swaync-client -t -sw 2>/dev/null",
+        "on-click-right": "swaync-client -d -sw 2>/dev/null",
+        "escape": true
+    },
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "on-scroll-up": "hyprctl dispatch workspace r+1",
+        "on-scroll-down": "hyprctl dispatch workspace r-1",
+        "persistent-workspaces": {
+            "*": 0
+        },
+        "disable-scroll": false,
+        "all-outputs": true
+    }
+}
