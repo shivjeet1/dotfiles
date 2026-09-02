@@ -2,6 +2,10 @@ GIT_PS1_SHOWDIRTYSTATE=1
 
 source ~/.cache/wal/colors.sh
 source ~/.config/zsh/git-prompt.sh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/fzf/completion.zsh
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 PS1="[%F{$color4}%n%f@%F{$color2}%m%f %F{$color5}%~%f] %(!.#.$) "
 
@@ -19,6 +23,7 @@ zstyle ':completion:*' menu select
 bindkey -e
 bindkey ";5C" forward-word
 bindkey ";5D" backward-word
+bindkey "^[[3~" delete-char
 
 function precmd () {
     print -Pn -- '\e]2;%n@%m %~\a'
@@ -28,7 +33,6 @@ function precmd () {
 
 # OPTIMIZED: Stripped the slow Ruby execution and removed duplicate PATHs. 
 export GEM_HOME="$HOME/gems"
-export PATH="$HOME/.local/bin:$HOME/.cargo/bin:$HOME/gems/bin:$PATH"
 
 export ANDROID_HOME=/opt/android-sdk
 export ANDROID_SDK_ROOT=/opt/android-sdk
@@ -52,12 +56,9 @@ alias npx="unalias nvm node npm npx yarn; zsh-nvm-lazy-load; npx"
 alias yarn="unalias nvm node npm npx yarn; zsh-nvm-lazy-load; yarn"
 
 # Syntax highlighting must stay at the very end
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=160'
 
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-
+export PATH=$PATH:$HOME/go/bin
 # Added by Antigravity CLI installer
 export PATH="/home/shiv/.local/bin:$PATH"
