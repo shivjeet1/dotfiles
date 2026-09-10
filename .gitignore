@@ -1,3 +1,4 @@
 .vscode/
 *.vscdb
 *.vscdb.backup
+./scripts/win10_drive.qcow2
