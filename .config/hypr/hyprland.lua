@@ -75,7 +75,7 @@ hl.config({
     },
     decoration = {
         rounding = 5,
-        active_opacity = 1.0,
+        active_opacity = 0.9,
         inactive_opacity = 0.85,
         blur = {
             enabled = true,
@@ -129,9 +129,6 @@ hl.animation({ leaf = "workspaces", enabled = true, speed = 6, bezier = "default
 --------------------------------------------------
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 hl.bind(mainMod .. " + SHIFT + Q", hl.dsp.exit())
-hl.bind(mainMod .. " + F", hl.dsp.window.float({ action = "toggle" }))
-hl.bind(mainMod .. " + F", hl.dsp.window.resize({ x = 945, y = 501 }))
-hl.bind(mainMod .. " + F", hl.dsp.window.center())
 hl.bind(mainMod .. " + slash", function() hl.exec_cmd(menu) end)
 hl.bind(mainMod .. " + SHIFT + Return", function() hl.exec_cmd(terminal) end)
 hl.bind(mainMod .. " + SHIFT + W", function() hl.exec_cmd(killbar) end)
@@ -165,6 +162,20 @@ hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize())
 -- Screenshots
 hl.bind(mainMod .. " + SHIFT + S", function() hl.exec_cmd(screenshot) end)
 
+-- QEMU VMs binds 
+
+hl.bind("SUPER + F12", hl.dsp.submap("passthrough"))
+
+hl.define_submap("passthrough", function()
+    hl.bind("SUPER + F12", hl.dsp.submap("reset"))
+end)
+
+-- ### LAYOUT BINDS ###
+
+hl.bind(mainMod .. " + F", hl.dsp.window.float({ action = "toggle" }))
+hl.bind(mainMod .. " + F", hl.dsp.window.resize({ x = 945, y = 501 }))
+hl.bind(mainMod .. " + F", hl.dsp.window.center())
+
 local layout_cycle = { "dwindle", "master", "scrolling", "monocle" }
 
 -- Reads whichever layout is actually active on the focused (or special)
@@ -176,7 +187,7 @@ end
 local function announce_layout(layout)
     hl.notification.create({
         text = "Layout: " .. layout,
-        duration = 1500,
+        duration = 2500,
         icon = "info",
         color = colors.color4 or "rgba(89b4faee)",
     })
