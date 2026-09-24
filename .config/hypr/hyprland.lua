@@ -164,10 +164,25 @@ hl.bind(mainMod .. " + SHIFT + S", function() hl.exec_cmd(screenshot) end)
 
 -- QEMU VMs binds 
 
-hl.bind("SUPER + F12", hl.dsp.submap("passthrough"))
+local function announcer(mode)
+    hl.notification.create({
+        text = "Input Mode: " .. mode,
+        duration = 2500,
+        icon = "info",
+        color = colors.color4 or "rgba(89b4faee)",
+    })
+end
+
+hl.bind(mainMod .. "+ F12", function()
+    hl.dispatch(hl.dsp.submap("passthrough"))
+    announcer("VM Passthrough")
+end)
 
 hl.define_submap("passthrough", function()
-    hl.bind("SUPER + F12", hl.dsp.submap("reset"))
+    hl.bind(mainMod .. "+ F12", function()
+        hl.dispatch(hl.dsp.submap("reset"))
+        announcer("Host Controls")
+    end)
 end)
 
 -- ### LAYOUT BINDS ###
