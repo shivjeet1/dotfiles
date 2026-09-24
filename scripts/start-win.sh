@@ -11,6 +11,8 @@ qemu-system-x86_64 \
   -drive file="$DISK_IMG",format=qcow2,if=ide \
   -vga virtio \
   -display gtk,gl=on \
-  -full-screen \
   -usb -device usb-tablet \
-  -rtc base=localtime
+  -rtc base=localtime \
+  -device virtio-serial-pci \
+  -chardev qemu-vdagent,id=vdagent,name=vdagent,clipboard=on \
+  -device virtserialport,chardev=vdagent,name=com.redhat.spice.0
