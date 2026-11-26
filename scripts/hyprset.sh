@@ -54,16 +54,18 @@ if [ -f "$HYPRPAPER_CONF" ]; then
     # It assumes the file is already structured with a 'preload' line.
     sed -i "s|^preload =.*$|preload = $WALLPAPER_PATH|" "$HYPRPAPER_CONF"
     
-    if grep -q "^wallpaper = " "$HYPRPAPER_CONF"; then
-        sed -i "s|^wallpaper =.*$|wallpaper = eDP-1,$WALLPAPER_PATH|" "$HYPRPAPER_CONF"
+    # hyprpaper 0.8+ uses the "wallpaper { monitor/path }" block syntax
+    if grep -q '^    path = ' "$HYPRPAPER_CONF"; then
+        sed -i "s|^    path =.*$|    path = $WALLPAPER_PATH|" "$HYPRPAPER_CONF"
     else
-        echo "wallpaper = eDP-1,$WALLPAPER_PATH" >> "$HYPRPAPER_CONF"
+        echo "WARNING: no 'wallpaper { path = ... }' block found in $HYPRPAPER_CONF"
     fi
     
     echo "Make sure 'eDP-1' in hyprpaper.conf matches your actual monitor name!"
 
-    pkill -SIGUSR1 hyprpaper
-    echo "Hyprpaper reloaded."
+    pkill -x hyprpaper 2>/dev/null || true
+    hyprpaper >/dev/null 2>&1 &
+    echo "Hyprpaper restarted."
 else
     echo "WARNING: Hyprpaper config not found at $HYPRPAPER_CONF. Skipping update/reload."
 fi
