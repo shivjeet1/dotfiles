@@ -1,0 +1,8 @@
+\.git
+\.gitignore
+\.stow-local-ignore
+README.*
+LICENSE.*
+scripts
+aizen\.png
+eminence\.jpg

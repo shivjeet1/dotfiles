@@ -38,11 +38,12 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("swaync")
     hl.exec_cmd("hypridle")
     hl.exec_cmd("waybar")
-    hl.exec_cmd("sleep 1; cava.sh")
+    hl.exec_cmd("sleep 1; ~/.config/hypr/scripts/cava.sh")
     hl.exec_cmd("hyprpaper")
     hl.exec_cmd("wal -R")
     hl.exec_cmd("systemctl --user start hyprpolkitagent")
     hl.exec_cmd("hyprpm reload")
+    hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
     -- hl.exec_cmd(
     --  "kitty +kitten panel --edge=background --detach -o background_opacity=0.4 -o window_padding_width=2 cava")
 end)
@@ -161,11 +162,6 @@ hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag())
 hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize())
 -- Screenshots
 hl.bind(mainMod .. " + SHIFT + S", function() hl.exec_cmd(screenshot) end)
-
--- Add to your startup/exec-once definitions
-exec_once = {
-    "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
-}
 
 -- QEMU VMs binds 
 
