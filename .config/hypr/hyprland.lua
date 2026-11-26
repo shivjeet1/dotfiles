@@ -17,7 +17,7 @@ hl.monitor({
 })
 hl.monitor({
     output = "",
-    mode = "preferred",
+    mode = "highres@highrr",
     position = "auto",
     scale = "1",
     mirror = "eDP-1",
@@ -44,7 +44,7 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("systemctl --user start hyprpolkitagent")
     hl.exec_cmd("hyprpm reload")
     -- hl.exec_cmd(
-    -- "kitty +kitten panel --edge=background --detach -o background_opacity=0.4 -o window_padding_width=2 cava")
+    --  "kitty +kitten panel --edge=background --detach -o background_opacity=0.4 -o window_padding_width=2 cava")
 end)
 
 --------------------------------------------------
@@ -75,7 +75,7 @@ hl.config({
     },
     decoration = {
         rounding = 5,
-        active_opacity = 0.9,
+        active_opacity = 1.0,
         inactive_opacity = 0.85,
         blur = {
             enabled = true,
@@ -161,6 +161,11 @@ hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag())
 hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize())
 -- Screenshots
 hl.bind(mainMod .. " + SHIFT + S", function() hl.exec_cmd(screenshot) end)
+
+-- Add to your startup/exec-once definitions
+exec_once = {
+    "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
+}
 
 -- QEMU VMs binds 
 
@@ -262,8 +267,8 @@ hl.bind("XF86AudioLowerVolume", function() hl.exec_cmd("wpctl set-volume @DEFAUL
     { repeating = true, locked = true })
 hl.bind("XF86AudioMute", function() hl.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle") end, { locked = true })
 hl.bind("XF86AudioMicMute", function() hl.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle") end, { locked = true })
-hl.bind("XF86MonBrightnessUp", function() hl.exec_cmd("~/.local/bin/dynamic-bgtns up") end, { repeating = true, locked = true })
-hl.bind("XF86MonBrightnessDown", function() hl.exec_cmd("~/.local/bin/dynamic-bgtns down") end, { repeating = true, locked = true })
+hl.bind("XF86MonBrightnessUp", function() hl.exec_cmd("brillo -q -A 5 -u 300000") end, { repeating = true, locked = true })
+hl.bind("XF86MonBrightnessDown", function() hl.exec_cmd("brillo -q -U 5 -u 300000") end, { repeating = true, locked = true })
 
 --------------------------------------------------
 -- WINDOW & WORKSPACE RULES

@@ -2,7 +2,7 @@ GIT_PS1_SHOWDIRTYSTATE=1
 
 source ~/.cache/wal/colors.sh
 source ~/.config/zsh/git-prompt.sh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+#source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -21,8 +21,10 @@ autoload -Uz compinit && compinit -C
 zstyle ':completion:*' menu select
 
 bindkey -e
-bindkey ";5C" forward-word
-bindkey ";5D" backward-word
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+# bindkey ";5C" forward-word
+# bindkey ";5D" backward-word
 bindkey "^[[3~" delete-char
 
 function precmd () {
@@ -62,3 +64,9 @@ ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=160'
 export PATH=$PATH:$HOME/go/bin
 # Added by Antigravity CLI installer
 export PATH="/home/shiv/.local/bin:$PATH"
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/bin/terraform terraform
+export PATH="$HOME/.local/npm/bin:$PATH"
+export PATH=$HOME/.opencode/bin:$PATH
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk

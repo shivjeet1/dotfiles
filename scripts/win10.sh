@@ -20,4 +20,5 @@ qemu-system-x86_64 \
   -vga virtio \
   -display gtk,gl=on \
   -usb -device usb-tablet \
+  -device usb-host,vendorid=0x0781,productid=0x55b8 \
   -rtc base=localtime
